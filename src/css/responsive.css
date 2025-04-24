@@ -1,0 +1,25 @@
+@media (max-width: 767px) {
+    
+    #info {
+        flex-direction: column;
+        gap: 2px;
+        font-size: 11px;
+    }
+
+    #email, #location {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #email i,
+    #location i,
+    #phone i {
+        font-size: 13px;
+    }
+
+    .banner {
+        height: auto; 
+        padding: 4px 0;
+    }
+}

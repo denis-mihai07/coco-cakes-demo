@@ -1,0 +1,60 @@
+@font-face {
+    font-family: Khamden;
+    src: url(../../public/fonts/Khamden\ Script.otf);
+}
+
+@font-face {
+    font-family: Hoss;
+    src: url(../../public/fonts/SourGummy-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: Infant;
+    src: url(../../public/fonts/CormorantInfant-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Cutive;
+    src: url(../../public/fonts/CutiveMono-Regular.ttf);
+}
+
+button {
+    border: none;
+    outline: none;
+    background: none;
+    box-shadow: none;
+    cursor: pointer;
+  }
+  
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

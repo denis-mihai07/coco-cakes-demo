@@ -1,0 +1,215 @@
+/*  MOTTO ANIMATION */
+
+#hero_motto {
+  -webkit-animation: hero_motto 1.0s cubic-bezier(0.785, 0.135, 0.150, 0.860) both;
+          animation: hero_motto 1.0s cubic-bezier(0.785, 0.135, 0.150, 0.860) both;
+}
+
+@-webkit-keyframes hero_motto {
+  0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes hero_motto {
+  0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/*  LOGO  ANIMATION */
+.text-shadow-pop-top {
+  text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
+  transform: translateY(0);
+  animation-fill-mode: forwards;
+}
+
+.text-shadow-pop-top:hover {
+  animation: text-shadow-pop-top 0.6s forwards;
+}
+
+.text-shadow-pop-top:not(:hover) {
+  animation: text-shadow-pop-top-reverse 0.6s forwards;
+}
+
+@keyframes text-shadow-pop-top {
+  0% {
+    text-shadow: 0 0 #222222, 0 0 #222222, 0 0 #222222, 0 0 #222222, 0 0 #222222, 0 0 #222222, 0 0 #222222, 0 0 #222222;
+    transform: translateY(0);
+  }
+  100% {
+    text-shadow: 0 -1px #222222, 0 -2px #222222, 0 -3px #222222, 0 -4px #222222, 0 -5px #222222, 0 -6px #222222, 0 -7px #222222, 0 -8px #222222;
+    transform: translateY(8px);
+  }
+}
+
+@keyframes text-shadow-pop-top-reverse {
+  0% {
+    text-shadow: 0 -1px #222222, 0 -2px #222222, 0 -3px #222222, 0 -4px #222222, 0 -5px #222222, 0 -6px #222222, 0 -7px #222222, 0 -8px #222222;
+    transform: translateY(8px);
+  }
+  100% {
+    text-shadow: 0 0 #222222, 0 0 #222222, 0 0 #222222, 0 0 #222222, 0 0 #222222, 0 0 #222222, 0 0 #222222, 0 0 #222222;
+    transform: translateY(0);
+  }
+}
+
+/*  CONTACT BUTTON  ANIMATION */
+
+.contact_button {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  animation-fill-mode: forwards;
+  animation-duration: 0.6s;
+  animation-timing-function: ease;
+}
+
+.contact_button:hover {
+  animation-name: shadow-drop-center;
+}
+
+.contact_button:not(:hover) {
+  animation-name: shadow-drop-center-reverse;
+}
+
+@keyframes shadow-drop-center {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.35);
+  }
+}
+
+@keyframes shadow-drop-center-reverse {
+  0% {
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.35);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+/* LEARN MORE BUTTON ANIMATION */
+
+.learn_more_button {
+  animation: heartbeat 5s infinite;
+}
+
+.learn_more_text {
+  animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-20%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.60);
+            transform: scale(0.60);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+
+
+.marquee {
+  animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(0%);
+  }
+  100% {
+      transform: translateX(-50%);
+  }
+}
