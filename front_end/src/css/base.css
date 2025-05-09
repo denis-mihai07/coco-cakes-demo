@@ -1,0 +1,101 @@
+@font-face {
+    font-family: Khamden;
+    src: url(../../public/fonts/Khamden\ Script.otf);
+}
+
+@font-face {
+    font-family: Hoss;
+    src: url(../../public/fonts/SourGummy-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: Infant;
+    src: url(../../public/fonts/CormorantInfant-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Cutive;
+    src: url(../../public/fonts/CutiveMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: Script;
+    src: url(../../public/fonts/DancingScript-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Fraunces;
+    src: url(../../public/fonts/Fraunces-VariableFont_wght.ttf);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cf7070; 
+    border-radius: 5%; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a95555;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #7d3f3f;
+}
+
+:root {
+    --main-color: #c16161;
+    --second-color: #fcd2d2;
+    --third-color: #000000;
+    --fourth-color: #7d3f3f;
+    --fifth-color: #a95555;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+  
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

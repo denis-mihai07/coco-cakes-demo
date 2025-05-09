@@ -1,0 +1,36 @@
+.page_banner {
+    height: 80px;
+    width: 100%;
+    background-color: #c16161;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+  
+.marquee {
+    display: flex;
+}
+  
+.marquee_content {
+    display: flex;
+}
+  
+.marquee_content span {
+    font-size: 35px;
+    font-family: Infant;
+    font-weight: bold;
+    color: #ffd1d1;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    margin-right: 20px;
+    user-select: none;
+}
+  
+.marquee_content span i {
+    margin-left: 20px;
+    font-size: 40px;
+    color:#ffd1d1;
+
+}
