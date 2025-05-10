@@ -113,7 +113,7 @@
 #prices_image {
     height: 90%;
     width: 30%;
-    border-radius: 0 50%;
+    border-radius: 1% 50%;
     background-color: #00000000;
     display: flex;
     justify-content: center;
@@ -122,6 +122,7 @@
     overflow: hidden;
     background: url(../../../public/images/prices.jpg) no-repeat center center;
     background-size: cover;
+    user-select: none;
 }
 
 #prices_image img {
@@ -163,7 +164,7 @@
     height: 100%;
     width: 15%;
     padding: 10px;
-    
+    user-select: none;
     border-radius: 50%;
 }
 
@@ -173,6 +174,7 @@
     border-radius: 50%;
     border: 5px solid rgba(0, 0, 0, 0.262);
     object-fit: cover;
+    user-select: none;
 }
 
 .prices_item_content {
