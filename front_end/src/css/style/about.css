@@ -23,9 +23,11 @@
 
 
 .about_content {
-    height: 80%;
-    width: 35%;
-    background-color: #0b0b0bc1;
+    height: 700px;
+    width: 700px;
+    min-height: 700px;
+    min-width: 700px;
+    background-color: #0b0b0be8;
     border: 1px solid rgb(45, 45, 45);
     border-radius: 5%;
     overflow: hidden;
@@ -35,7 +37,8 @@
 }
 
 .about_content .about_title {
-    font-size: 1.4rem;
+    height: 30px;
+    font-size: 1.2rem;
     font-family: Cutive;
     color: rgb(255, 255, 255);
     display: flex;
@@ -44,7 +47,7 @@
 
 .about_content .about_title i {
     color: #ff9e9e;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin: 10px;
 }
 
@@ -75,11 +78,11 @@
 }
 
 .about_circle {
-    height: min(50%, 100px);
-    width: min(13%, 100px);
+    height: 70px;
+    width: 70px;
     border-radius: 100%;
     margin: 0px 20px;
-    background-color: #3d3434fe;
+    background-color: #ffffff24;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,9 +107,10 @@
     width: 100%;
     display: flex;
     justify-content: start;
+    align-items: center;
     color: white;
     font-family: Infant;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .about_description {
