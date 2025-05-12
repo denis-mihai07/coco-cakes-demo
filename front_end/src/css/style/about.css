@@ -33,13 +33,15 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     padding: 60px;
 }
 
 .about_content .about_title {
-    height: 30px;
-    font-size: 1.2rem;
-    font-family: Cutive;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
     color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
@@ -47,8 +49,8 @@
 
 .about_content .about_title i {
     color: #ff9e9e;
-    font-size: 1.2rem;
-    margin: 10px;
+    font-size: 1.3rem;
+    margin: 0 10px 0 0;
 }
 
 .about_content .about_title2 {

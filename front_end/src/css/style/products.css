@@ -35,15 +35,17 @@
 }
 
 #products_title {
-    font-size: 1.4rem;
-    font-family: Cutive;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
     color: rgb(255, 255, 255);
 }
 
 #products_title i {
     color: #e96767;
     font-size: 1.2rem;
-    margin: 10px;
+    margin: 0px 10px 0 0;
 }
 
 #products_subtitle {
