@@ -55,7 +55,7 @@
 
 .about_content .about_title2 {
     font-size: clamp(1.5rem, 2.5rem, 3rem);
-    margin: 5px;
+    margin: 5px 0;
     font-family: Infant;
     color: rgb(255, 255, 255);
     display: flex;

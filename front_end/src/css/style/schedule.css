@@ -20,6 +20,7 @@
     justify-content: space-evenly;
     align-items: center;
     z-index: 0;
+
 }
 
 
@@ -42,26 +43,37 @@
     align-items: center;
     overflow: hidden;
     z-index: 0;
-    border: 3px solid red;
 }
 
 .schedule_image_container .main_image {
     height: 100%;
     width: 85%;
     border-radius: 1% 50%;
-    border: 3px solid rgb(31, 24, 227);
-
 }
 
 .schedule_image_container .main_image img {
-        background: url(../../../public/images/schedule_background.jpg) no-repeat center center fixed;
+    height: 100%;
+    width: 100%;
+    border-radius: 1% 50%;
+}
+
+.schedule_image_container .second_image img {
+    height: 100%;
+    width: 100%;
+    background: url(../../../public/images/second_image.jpg) no-repeat center center;
     background-size: cover;
 }
 
 .schedule_image_container .second_image {
     height: 30%;
-    width: 50%;
+    width: auto;
+    aspect-ratio: 1/1;
     position: absolute;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 8px solid #f9c0c0;
+    top: 10%;
+    left: 0%;
 
 }
 

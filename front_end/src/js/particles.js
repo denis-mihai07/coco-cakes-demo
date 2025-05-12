@@ -2,7 +2,7 @@ window.addEventListener('load', () => {
     particlesJS('particles', {
         particles: {
             number: { 
-                value: 100, 
+                value: 50, 
                 density: { enable: true, value_area: 800 } 
             },
             color: { value: "#ff9f9f" },

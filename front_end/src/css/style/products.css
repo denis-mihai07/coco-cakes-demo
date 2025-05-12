@@ -19,6 +19,7 @@
     justify-content: space-evenly;
     align-items: center;
     z-index: 0;
+    border-bottom: 1px solid #e967679b;
 }
 
 #products_header {
@@ -85,6 +86,9 @@
 #products_content {
     height: 60%;
     width: 70%;
+    min-height: 500px;
+    min-width: 1300px;
+    border: 2px solid red;
     border-radius: 30px;
     padding: 20px;
     background-color: #00000000;
