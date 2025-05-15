@@ -1,5 +1,5 @@
 #testimonials_container {
-    height: 600px;
+    height: 500px;
     width: 100%;
     max-height: 1000px;
     max-width: 2000px;
@@ -35,39 +35,115 @@
     flex-direction: column;
     overflow: hidden;
     position: relative;
-    border: 2px solid red;
 
 
 }
 
-.testimonials_slider {
+.splide {
     height: 60%;
     width: 70%;
-
-    border: 2px solid red;
+    /* height: 360px;
+    width: 400px; */
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .splide__track {
     height: 100%;
-    width: 100%;
-
-    border: 2px solid red;
+    width: 90%;
+    
 }
 
 .splide__list {
     height: 100%;
     width: 100%;
-
-    border: 2px solid rgb(30, 0, 255);
 }
 
 .splide__slide {
-
-
-    border: 2px solid red;
     font-size: 5rem;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+
 }
 
+.splide__text {
+    height: auto;
+    width: auto;
+    max-width: 90%;
+    font-family: Nunito;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+
+
+}
+
+.splide__user {
+    height: 20%;
+    width: 80%;
+    font-family: Nunito;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(255, 177, 177);
+
+
+}
+
+
+.splide__arrow {
+
+    background-color: #ff6d6d66;
+    padding: 2.25%;
+    transition: background-color 0.4s ease;
+    position: absolute;
+}
+
+.splide__arrow svg {
+    fill: rgb(255, 216, 216);
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+}
+
+.splide__arrow:hover {
+    background-color: #ff6d6d99;
+}
+
+.splide__arrow--prev {
+    top: 50%;
+    left: 0;
+
+}
+
+.splide__arrow--next {
+    top: 50%;
+    right: 0;
+
+}
+
+.testimonials_footer {
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 13px;
+}

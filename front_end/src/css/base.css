@@ -29,6 +29,11 @@
     src: url(../../public/fonts/Fraunces-VariableFont_wght.ttf);
 }
 
+@font-face {
+    font-family: Nunito;
+    src: url(../../public/fonts/Quicksand-VariableFont_wght.ttf)
+}
+
 ::-webkit-scrollbar {
     width: 8px;
     height: 8px;

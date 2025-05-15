@@ -217,7 +217,7 @@
     overflow: hidden;
 }
 
-.section_message_container > .section_message > div {
+.question_text {
     font-size: 0.9rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
@@ -230,10 +230,18 @@
 
 }
 
-.section_message_container > .section_message > #highlighted_text {
+#highlighted_text {
+    font-size: 0.9rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     color: #ea7777 !important;
     font-weight: bold;
     font-style: italic;
+    display: flex;
+    justify-content: end;
+    align-items: center;
     text-decoration: underline;
     text-underline-offset: 0.3rem;
 }
