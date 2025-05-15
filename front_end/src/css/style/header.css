@@ -22,8 +22,8 @@
 }
 
 .logo {
-    font-family: Khamden;
-    font-size: 50px;
+    font-family: Cookie;
+    font-size: 4rem;
     user-select: none;
     color: #ffffff;
 }
@@ -64,23 +64,44 @@
 }
 
 .contact_button {
-    background-color: #ffffff;
-    border: none;
-    color: rgb(0, 0, 0);
+    background-color: #ffffff00;
+    color: #c16161;
     font-family: Hoss;
     font-size: 15px;
     padding: 15px 40px;
     border-radius: 50px;
-    border: 2px solid #000000;
     cursor: pointer;
     user-select: none;
-    transition: background-color 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     z-index: 1;
+    border: 2px solid #c16161;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_button::after {
+    
+    position: absolute;
+    top: 0;
+    left: 0%;    
+    height: 100%;
+    width: 0%;
+
+    border-radius: 50px;
+    transition: width 0.9s ease;
 
 }
 
+.contact_button:hover::after {
+    width: 100%;
+}
+
+
 .contact_button:hover {
-    background-color: #ffffff;
+    background-color: #c16161;
+    color: rgb(255, 255, 255);
 
 }
 

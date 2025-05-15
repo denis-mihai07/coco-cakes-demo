@@ -1,249 +1,353 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<title>Coco Cake's & Gustul din Copilărie » Râmnicu Valcea</title>
-		<link rel="icon" href="./front_end/public/images/cake_icon.png" type="image/png" />
+    <title>Coco Cake's & Gustul din Copilărie » Râmnicu Valcea</title>
+    <link
+      rel="icon"
+      href="./front_end/public/images/cake_icon.png"
+      type="image/png"
+    />
 
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-		<!-- Font Awesome -->
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
-		/>
-		<!-- Phosphor Icons Regular -->
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/light/style.css"
-		/>
-		<!-- Phosphor Icons Light -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css" />
-		<!-- Splide CSS -->
-		 
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
-		<link rel="stylesheet" href="./front_end/src/css/base.css" />
-		<link rel="stylesheet" href="./front_end/src/css/animations.css" />
+    <!-- Phosphor Icons Regular -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
 
-		<link rel="stylesheet" href="./front_end/src/css/style/background.css" />
-		<link rel="stylesheet" href="./front_end/src/css/style/banner.css" />
-		<link rel="stylesheet" href="./front_end/src/css/style/header.css" />
-		<link rel="stylesheet" href="./front_end/src/css/style/hero.css" />
-		<link rel="stylesheet" href="./front_end/src/css/style/page_banner.css" />
-		<link rel="stylesheet" href="./front_end/src/css/style/panel.css" />
-		<link rel="stylesheet" href="./front_end/src/css/style/about.css" />
-		<link rel="stylesheet" href="./front_end/src/css/style/products.css" />
-		<link rel="stylesheet" href="./front_end/src/css/style/prices.css" />
-        <link rel="stylesheet" href="./front_end/src/css/style/schedule.css"/>
-		<link rel="stylesheet" href="./front_end/src/css/testimonials.css" />
-		<link rel="stylesheet" href="./front_end/src/css/responsive.css" />
-	</head>
-	<body>
-		<div id="particles"></div>
-		<div class="background"><div class="background_image"></div></div>
+    <!-- Phosphor Icons Light -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/light/style.css"
+    />
 
-		<div id="overlay"></div>
-		<div id="menu_panel">
-			<button id="close_button">
-				<div class="close_button_line" id="line1"></div>
-				<div class="close_button_line" id="line2"></div>
-			</button>
-			<article id="panel_content">
-				<!-- CONTENT /: TO BE MODIFIED-->
-				<div class="panel_title">BINE AI VENIT LA COCO CAKES</div>
-				<div class="panel_subtitle">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis accusamus ab amet praesentium
-					iusto?
-				</div>
-				<div class="panel_icon"><i class="ph ph-info"></i></div>
-				<div class="panel_phone" id="panel_phone_clipboard">+40 774 429 131</div>
-				<div class="panel_location">Str. Râureni Nr. 181, Râmnicu Vâlcea</div>
-				<div class="panel_email">corinadragusin1985@gmail.com</div>
-				<div class="panel_icon"><i class="ph ph-alarm"></i></div>
-				<div class="panel_schedule">
-					Luni - Vineri: 6.00 - 14.00 <br />
-					Sâmbată: 8.00 - 16.00 <br />
-					Duminică: 10.00 - 18.00
-				</div>
-				<div class="panel_socials">
-					<a href="https://www.instagram.com/cococakesro/" target="_blank">
-						<span><i class="fa-brands fa-instagram"></i></span>
-					</a>
-					<div>│</div>
-					<a href="https://www.facebook.com/profile.php?id=100087629145121&locale=ro_RO" target="_blank">
-						<span><i class="fa-brands fa-facebook-f"></i></span>
-					</a>
-					<div>│</div>
-					<a
-						href="https://api.whatsapp.com/send?phone=40774429131&text=Link%3A%0Ahttps%3A%2F%2Ffb.me%2F6lOtHI9Bf%0A%0ASalut%21+%C3%8Emi+pute%C5%A3i+oferi+mai+multe+informa%C5%A3ii%3F&source_url=https%3A%2F%2Ffb.me%2F6lOtHI9Bf&icebreaker=Salut%21+%C3%8Emi+pute%C5%A3i+oferi+mai+multe+informa%C5%A3ii%3F&app=facebook&entry_point=post_cta&jid=40774429131%40s.whatsapp.net&lid=90126264832178%40lid&show_keyboard=1&show_ad_attribution=1&source=FB_Post&token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjEyNSJ9.eyJleHAiOjE3NDUyNjgwMzIsInBob25lIjoiNDA3NzQ0MjkxMzEiLCJ0ZXh0IjoiTGluazpcbmh0dHBzOlwvXC9mYi5tZVwvNmxPdEhJOUJmXG5cblNhbHV0ISBcdTAwY2VtaSBwdXRlXHUwMTYzaSBvZmVyaSBtYWkgbXVsdGUgaW5mb3JtYVx1MDE2M2lpPyIsInNvdXJjZV91cmwiOiJodHRwczpcL1wvZmIubWVcLzZsT3RISTlCZiIsImljZWJyZWFrZXIiOiJTYWx1dCEgXHUwMGNlbWkgcHV0ZVx1MDE2M2kgb2ZlcmkgbWFpIG11bHRlIGluZm9ybWFcdTAxNjNpaT8iLCJhcHAiOiJmYWNlYm9vayIsImVudHJ5X3BvaW50IjoicG9zdF9jdGEiLCJqaWQiOiI0MDc3NDQyOTEzMVx1MDA0MHMud2hhdHNhcHAubmV0IiwibGlkIjoiOTAxMjYyNjQ4MzIxNzhcdTAwNDBsaWQiLCJzaG93X2tleWJvYXJkIjoxLCJzaG93X2FkX2F0dHJpYnV0aW9uIjoxLCJzb3VyY2UiOiJGQl9Qb3N0Iiwic291cmNlX2lkIjoiNjUyOTIxNjIwOTcyMTM3IiwiY29udGV4dCI6IkFmZW1CR1JQWmJqVk5vNmhYNGtFX2ZCaWJIa2Z0Tms5eXFqaks1aHFyaWZ2bGNmRVI2TkJ3dWdnTTdmRjR2aWFkczIzOTBWVTlucnVfQVdLdjhiekJsLU5BZ3V6UGtnWGU5a2ZIempBNnplYW1iYjFrV2szRkViS3hSNzR3S1ZPSTJHV3FkMGFhMnh0QWlqZFA5OC0tRUc1cFVCX0I4aHRVLXV3V1dXSnZ1Smdvc2Q4R25rVFZCelFHd1cxdHp6TUJnaHg1ak9YWm9na0ZTUTd1SkZZRDBmOEE2VGp6clBRZXNZb3JBd3VHeUZUWGRDazVlZUlTSTZxMXhuUHJyeHg5QkIxM1pHcVd1ajU1Zm5Pd3dMLTVWaTA4X1ZuLVFURXh0WHJHYU5TeHRWTDdQbXZfM0QxUkVUSnZ3N2pIdkhFc1pnak5PRHJWTmE1MVhQRkJpQ19MVXJjTUlPNzVjbTVqTWVpXzRaWCJ9.azqjkXNfRdGPnncIy9KsrKcnbUaSsvOAZcywTbAtKJygS2YVQRm5XwrMkFtsI6hyYQsrzPPhcLTcJta8pSaQgQ"
-						target="_blank"
-					>
-						<span><i class="fa-brands fa-whatsapp"></i></span>
-					</a>
-				</div>
-			</article>
-		</div>
+    <!-- Splide CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+    />
 
-		<div class="banner">
-			<div class="banner_container">
-				<div id="info">
-					<div id="email">
-						<span><i class="ph ph-envelope-simple"></i></span>
-						<span class="info_text">corinadragusin1985@gmail.com</span>
-					</div>
-					<div id="location">
-						<span><i class="ph ph-map-pin"></i></span>
-						<span class="info_text">Str. Râureni Nr. 181</span>
-					</div>
-					<div id="phone">
-						<span><i class="ph ph-phone"></i></span>
-						<span class="info_text">0774.429.131</span>
-					</div>
-				</div>
-				<div id="socials">
-					<a id="instagram" href="https://www.instagram.com/cococakesro/" target="_blank">
-						<span><i class="fa-brands fa-instagram"></i></span>
-					</a>
-					<a
-						id="facebook"
-						href="https://www.facebook.com/profile.php?id=100087629145121&locale=ro_RO"
-						target="_blank"
-					>
-						<span><i class="fa-brands fa-facebook-f"></i></span>
-					</a>
-					<a
-						id="whatsapp"
-						href="https://api.whatsapp.com/send?phone=40774429131&text=Link%3A%0Ahttps%3A%2F%2Ffb.me%2F6lOtHI9Bf%0A%0ASalut%21+%C3%8Emi+pute%C5%A3i+oferi+mai+multe+informa%C5%A3ii%3F&source_url=https%3A%2F%2Ffb.me%2F6lOtHI9Bf&icebreaker=Salut%21+%C3%8Emi+pute%C5%A3i+oferi+mai+multe+informa%C5%A3ii%3F&app=facebook&entry_point=post_cta&jid=40774429131%40s.whatsapp.net&lid=90126264832178%40lid&show_keyboard=1&show_ad_attribution=1&source=FB_Post&token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjEyNSJ9.eyJleHAiOjE3NDUyNjgwMzIsInBob25lIjoiNDA3NzQ0MjkxMzEiLCJ0ZXh0IjoiTGluazpcbmh0dHBzOlwvXC9mYi5tZVwvNmxPdEhJOUJmXG5cblNhbHV0ISBcdTAwY2VtaSBwdXRlXHUwMTYzaSBvZmVyaSBtYWkgbXVsdGUgaW5mb3JtYVx1MDE2M2lpPyIsInNvdXJjZV91cmwiOiJodHRwczpcL1wvZmIubWVcLzZsT3RISTlCZiIsImljZWJyZWFrZXIiOiJTYWx1dCEgXHUwMGNlbWkgcHV0ZVx1MDE2M2kgb2ZlcmkgbWFpIG11bHRlIGluZm9ybWFcdTAxNjNpaT8iLCJhcHAiOiJmYWNlYm9vayIsImVudHJ5X3BvaW50IjoicG9zdF9jdGEiLCJqaWQiOiI0MDc3NDQyOTEzMVx1MDA0MHMud2hhdHNhcHAubmV0IiwibGlkIjoiOTAxMjYyNjQ4MzIxNzhcdTAwNDBsaWQiLCJzaG93X2tleWJvYXJkIjoxLCJzaG93X2FkX2F0dHJpYnV0aW9uIjoxLCJzb3VyY2UiOiJGQl9Qb3N0Iiwic291cmNlX2lkIjoiNjUyOTIxNjIwOTcyMTM3IiwiY29udGV4dCI6IkFmZW1CR1JQWmJqVk5vNmhYNGtFX2ZCaWJIa2Z0Tms5eXFqaks1aHFyaWZ2bGNmRVI2TkJ3dWdnTTdmRjR2aWFkczIzOTBWVTlucnVfQVdLdjhiekJsLU5BZ3V6UGtnWGU5a2ZIempBNnplYW1iYjFrV2szRkViS3hSNzR3S1ZPSTJHV3FkMGFhMnh0QWlqZFA5OC0tRUc1cFVCX0I4aHRVLXV3V1dXSnZ1Smdvc2Q4R25rVFZCelFHd1cxdHp6TUJnaHg1ak9YWm9na0ZTUTd1SkZZRDBmOEE2VGp6clBRZXNZb3JBd3VHeUZUWGRDazVlZUlTSTZxMXhuUHJyeHg5QkIxM1pHcVd1ajU1Zm5Pd3dMLTVWaTA4X1ZuLVFURXh0WHJHYU5TeHRWTDdQbXZfM0QxUkVUSnZ3N2pIdkhFc1pnak5PRHJWTmE1MVhQRkJpQ19MVXJjTUlPNzVjbTVqTWVpXzRaWCJ9.azqjkXNfRdGPnncIy9KsrKcnbUaSsvOAZcywTbAtKJygS2YVQRm5XwrMkFtsI6hyYQsrzPPhcLTcJta8pSaQgQ"
-						target="_blank"
-					>
-						<span><i class="fa-brands fa-whatsapp"></i></span>
-					</a>
-				</div>
-			</div>
-		</div>
+    <link rel="stylesheet" href="./front_end/src/css/base.css" />
+    <link rel="stylesheet" href="./front_end/src/css/animations.css" />
 
-		<div id="header_container">
-			<header class="header">
-				<div class="logo"><a href="index.html" class="text-shadow-pop-top">Coco Cakes</a></div>
-				<nav class="navigation">
-					<ul>
-						<li><a id="home">Acasă</a></li>
-						<li><a href="#page_banner">Despre noi</a></li>
-						<li><a href="#page_banner2">Produse</a></li>
-						<li><a href="#prices_container">Prețuri</a></li>
-                        <li><a href="#schedule_container">Program</a></li>
-						
-					</ul>
-				</nav>
-				<a class="contact_button">Contactează-ne</a>
-				<button id="menu">
-					<div class="menu_line"></div>
-					<div class="menu_line"></div>
-					<div class="menu_line"></div>
-				</button>
-			</header>
-		</div>
+    <link rel="stylesheet" href="./front_end/src/css/style/background.css" />
+    <link rel="stylesheet" href="./front_end/src/css/style/banner.css" />
+    <link rel="stylesheet" href="./front_end/src/css/style/header.css" />
+    <link rel="stylesheet" href="./front_end/src/css/style/hero.css" />
+    <link rel="stylesheet" href="./front_end/src/css/style/page_banner.css" />
+    <link rel="stylesheet" href="./front_end/src/css/style/panel.css" />
+    <link rel="stylesheet" href="./front_end/src/css/style/about.css" />
+    <link rel="stylesheet" href="./front_end/src/css/style/products.css" />
+    <link rel="stylesheet" href="./front_end/src/css/style/prices.css" />
+    <link rel="stylesheet" href="./front_end/src/css/style/schedule.css" />
 
-		<main>
-			<div id="hero_container">
-				<section class="hero">
-					<h1 id="hero_motto">
-						Gusturile Tradiției: <br />
-						Povestea Noastră Dulce
-					</h1>
-					<div id="learn_more_container">
-						<div class="learn_more_text">Află mai multe</div>
-						<a class="learn_more_button" href="#page_banner">
-							<i class="ph ph-arrow-down"></i>
-						</a>
-					</div>
-				</section>
-			</div>
+    <link rel="stylesheet" href="./front_end/src/css/style/testimonials.css" />
+    <link rel="stylesheet" href="./front_end/src/css/responsive.css" />
+    <link rel="stylesheet" href="./front_end/src/css/style/contact.css" />
+  </head>
+  <body>
+    <div id="particles"></div>
 
-			<section class="page_banner" id="page_banner">
-				<div class="marquee">
-					<div class="marquee_content">
-						<span>Coco Cakes & Gustul din Copilărie<i class="fa-solid fa-caret-left"></i></span>
-						<span>Coco Cakes & Gustul din Copilărie<i class="fa-solid fa-caret-left"></i></span>
-						<span>Coco Cakes & Gustul din Copilărie<i class="fa-solid fa-caret-left"></i></span>
-						<span>Coco Cakes & Gustul din Copilărie<i class="fa-solid fa-caret-left"></i></span>
-						<span>Coco Cakes & Gustul din Copilărie<i class="fa-solid fa-caret-left"></i></span>
-						<span>Coco Cakes & Gustul din Copilărie<i class="fa-solid fa-caret-left"></i></span>
-						<span>Coco Cakes & Gustul din Copilărie<i class="fa-solid fa-caret-left"></i></span>
-						<span>Coco Cakes & Gustul din Copilărie<i class="fa-solid fa-caret-left"></i></span>
-					</div>
-					<div class="marquee_content">
-						<span>Coco Cakes & Gustul din Copilărie<i class="fa-solid fa-caret-left"></i></span>
-						<span>Coco Cakes & Gustul din Copilărie<i class="fa-solid fa-caret-left"></i></span>
-						<span>Coco Cakes & Gustul din Copilărie<i class="fa-solid fa-caret-left"></i></span>
-						<span>Coco Cakes & Gustul din Copilărie<i class="fa-solid fa-caret-left"></i></span>
-						<span>Coco Cakes & Gustul din Copilărie<i class="fa-solid fa-caret-left"></i></span>
-						<span>Coco Cakes & Gustul din Copilărie<i class="fa-solid fa-caret-left"></i></span>
-						<span>Coco Cakes & Gustul din Copilărie<i class="fa-solid fa-caret-left"></i></span>
-						<span>Coco Cakes & Gustul din Copilărie<i class="fa-solid fa-caret-left"></i></span>
-					</div>
-				</div>
-			</section>
+    <div class="background">
+      <div class="background_image"></div>
+    </div>
 
-			<div id="about_container">
-				<section class="about" id="about">
-					<div class="about_content">
-						<div class="about_title"><i class="ph-light ph-cake"></i>Despre Noi</div>
-						<div class="about_title2">FERICIREA ÎNCEPE CU UN DESERT BUN</div>
-						<ul id="about_list">
-							<li class="about_item">
-								<div class="about_circle"><i class="ph ph-sketch-logo"></i></div>
-								<div class="about_subtitle_container">
-									<div class="about_subtitle">CALITATE FĂRĂ COMPROMISURI</div>
-									<div class="about_description">
-										Folosim doar ingrediente proaspete și naturale, alese cu grijă, pentru gusturi
-										autentice care se simt la prima mușcătură.
-									</div>
-								</div>
-							</li>
-							<li class="about_item">
-								<div class="about_circle"><i class="ph ph-heart-straight"></i></div>
-								<div class="about_subtitle_container">
-									<div class="about_subtitle">REȚETE CU SUFLET</div>
-									<div class="about_description">
-										Combinăm tradiția cofetăriei românești cu influențe moderne, pentru deserturi
-										care încântă orice generație.
-									</div>
-								</div>
-							</li>
-							<li class="about_item">
-								<div class="about_circle"><i class="ph ph-users-three"></i></div>
-								<div class="about_subtitle_container">
-									<div class="about_subtitle">DESERTURI CARE APROPIE OAMENII</div>
-									<div class="about_description">
-										Credem că o prăjitură bună spune o poveste. Iar la noi, fiecare poveste e
-										împărtășită cu zâmbete.
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-					<div class="about_quotes">
-						<div class="about_quote" id="about_quote1">
-							<i class="fa-solid fa-quote-left"></i>
-							<div class="about_quote_text">&nbsp;Zâmbet în fiecare felie...</div>
-							<i class="fa-solid fa-quote-right"></i>
-						</div>
-						<div class="about_quote" id="about_quote2">
-							<i class="fa-solid fa-quote-left"></i>
-							<div class="about_quote_text">&nbsp;Gustă fericirea.</div>
-							<i class="fa-solid fa-quote-right"></i>
-						</div>
-						<div class="about_quote" id="about_quote3">
-							<i class="fa-solid fa-quote-left"></i>
-							<div class="about_quote_text">&nbsp;Un desert, o promisiune.</div>
-							<i class="fa-solid fa-quote-right"></i>
-						</div>
-					</div>
-					<!-- <div class="about_window">
+    <div id="overlay"></div>
+    <div id="menu_panel">
+      <button id="close_button">
+        <div class="close_button_line" id="line1"></div>
+        <div class="close_button_line" id="line2"></div>
+      </button>
+      <article id="panel_content">
+        <!-- CONTENT /: TO BE MODIFIED-->
+        <div class="panel_title">BINE AI VENIT LA COCO CAKES</div>
+        <div class="panel_subtitle">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+          accusamus ab amet praesentium iusto?
+        </div>
+        <div class="panel_icon"><i class="ph ph-info"></i></div>
+        <div class="panel_phone" id="panel_phone_clipboard">
+          +40 774 429 131
+        </div>
+        <div class="panel_location">Str. Râureni Nr. 181, Râmnicu Vâlcea</div>
+        <div class="panel_email">corinadragusin1985@gmail.com</div>
+        <div class="panel_icon"><i class="ph ph-alarm"></i></div>
+        <div class="panel_schedule">
+          Luni - Vineri: 6.00 - 14.00 <br />
+          Sâmbată: 8.00 - 16.00 <br />
+          Duminică: 10.00 - 18.00
+        </div>
+        <div class="panel_socials">
+          <a href="https://www.instagram.com/cococakesro/" target="_blank">
+            <span><i class="fa-brands fa-instagram"></i></span>
+          </a>
+          <div>│</div>
+          <a
+            href="https://www.facebook.com/profile.php?id=100087629145121&locale=ro_RO"
+            target="_blank"
+          >
+            <span><i class="fa-brands fa-facebook-f"></i></span>
+          </a>
+          <div>│</div>
+          <a
+            href="https://api.whatsapp.com/send?phone=40774429131&text=Link%3A%0Ahttps%3A%2F%2Ffb.me%2F6lOtHI9Bf%0A%0ASalut%21+%C3%8Emi+pute%C5%A3i+oferi+mai+multe+informa%C5%A3ii%3F&source_url=https%3A%2F%2Ffb.me%2F6lOtHI9Bf&icebreaker=Salut%21+%C3%8Emi+pute%C5%A3i+oferi+mai+multe+informa%C5%A3ii%3F&app=facebook&entry_point=post_cta&jid=40774429131%40s.whatsapp.net&lid=90126264832178%40lid&show_keyboard=1&show_ad_attribution=1&source=FB_Post&token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjEyNSJ9.eyJleHAiOjE3NDUyNjgwMzIsInBob25lIjoiNDA3NzQ0MjkxMzEiLCJ0ZXh0IjoiTGluazpcbmh0dHBzOlwvXC9mYi5tZVwvNmxPdEhJOUJmXG5cblNhbHV0ISBcdTAwY2VtaSBwdXRlXHUwMTYzaSBvZmVyaSBtYWkgbXVsdGUgaW5mb3JtYVx1MDE2M2lpPyIsInNvdXJjZV91cmwiOiJodHRwczpcL1wvZmIubWVcLzZsT3RISTlCZiIsImljZWJyZWFrZXIiOiJTYWx1dCEgXHUwMGNlbWkgcHV0ZVx1MDE2M2kgb2ZlcmkgbWFpIG11bHRlIGluZm9ybWFcdTAxNjNpaT8iLCJhcHAiOiJmYWNlYm9vayIsImVudHJ5X3BvaW50IjoicG9zdF9jdGEiLCJqaWQiOiI0MDc3NDQyOTEzMVx1MDA0MHMud2hhdHNhcHAubmV0IiwibGlkIjoiOTAxMjYyNjQ4MzIxNzhcdTAwNDBsaWQiLCJzaG93X2tleWJvYXJkIjoxLCJzaG93X2FkX2F0dHJpYnV0aW9uIjoxLCJzb3VyY2UiOiJGQl9Qb3N0Iiwic291cmNlX2lkIjoiNjUyOTIxNjIwOTcyMTM3IiwiY29udGV4dCI6IkFmZW1CR1JQWmJqVk5vNmhYNGtFX2ZCaWJIa2Z0Tms5eXFqaks1aHFyaWZ2bGNmRVI2TkJ3dWdnTTdmRjR2aWFkczIzOTBWVTlucnVfQVdLdjhiekJsLU5BZ3V6UGtnWGU5a2ZIempBNnplYW1iYjFrV2szRkViS3hSNzR3S1ZPSTJHV3FkMGFhMnh0QWlqZFA5OC0tRUc1cFVCX0I4aHRVLXV3V1dXSnZ1Smdvc2Q4R25rVFZCelFHd1cxdHp6TUJnaHg1ak9YWm9na0ZTUTd1SkZZRDBmOEE2VGp6clBRZXNZb3JBd3VHeUZUWGRDazVlZUlTSTZxMXhuUHJyeHg5QkIxM1pHcVd1ajU1Zm5Pd3dMLTVWaTA4X1ZuLVFURXh0WHJHYU5TeHRWTDdQbXZfM0QxUkVUSnZ3N2pIdkhFc1pnak5PRHJWTmE1MVhQRkJpQ19MVXJjTUlPNzVjbTVqTWVpXzRaWCJ9.azqjkXNfRdGPnncIy9KsrKcnbUaSsvOAZcywTbAtKJygS2YVQRm5XwrMkFtsI6hyYQsrzPPhcLTcJta8pSaQgQ"
+            target="_blank"
+          >
+            <span><i class="fa-brands fa-whatsapp"></i></span>
+          </a>
+        </div>
+      </article>
+    </div>
+
+    <div class="banner">
+      <div class="banner_container">
+        <div id="info">
+          <div id="email">
+            <span><i class="ph ph-envelope-simple"></i></span>
+            <span class="info_text">corinadragusin1985@gmail.com</span>
+          </div>
+          <div id="location">
+            <span><i class="ph ph-map-pin"></i></span>
+            <span class="info_text">Str. Râureni Nr. 181</span>
+          </div>
+          <div id="phone">
+            <span><i class="ph ph-phone"></i></span>
+            <span class="info_text">0774.429.131</span>
+          </div>
+        </div>
+        <div id="socials">
+          <a
+            id="instagram"
+            href="https://www.instagram.com/cococakesro/"
+            target="_blank"
+          >
+            <span><i class="fa-brands fa-instagram"></i></span>
+          </a>
+          <a
+            id="facebook"
+            href="https://www.facebook.com/profile.php?id=100087629145121&locale=ro_RO"
+            target="_blank"
+          >
+            <span><i class="fa-brands fa-facebook-f"></i></span>
+          </a>
+          <a
+            id="whatsapp"
+            href="https://api.whatsapp.com/send?phone=40774429131&text=Link%3A%0Ahttps%3A%2F%2Ffb.me%2F6lOtHI9Bf%0A%0ASalut%21+%C3%8Emi+pute%C5%A3i+oferi+mai+multe+informa%C5%A3ii%3F&source_url=https%3A%2F%2Ffb.me%2F6lOtHI9Bf&icebreaker=Salut%21+%C3%8Emi+pute%C5%A3i+oferi+mai+multe+informa%C5%A3ii%3F&app=facebook&entry_point=post_cta&jid=40774429131%40s.whatsapp.net&lid=90126264832178%40lid&show_keyboard=1&show_ad_attribution=1&source=FB_Post&token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjEyNSJ9.eyJleHAiOjE3NDUyNjgwMzIsInBob25lIjoiNDA3NzQ0MjkxMzEiLCJ0ZXh0IjoiTGluazpcbmh0dHBzOlwvXC9mYi5tZVwvNmxPdEhJOUJmXG5cblNhbHV0ISBcdTAwY2VtaSBwdXRlXHUwMTYzaSBvZmVyaSBtYWkgbXVsdGUgaW5mb3JtYVx1MDE2M2lpPyIsInNvdXJjZV91cmwiOiJodHRwczpcL1wvZmIubWVcLzZsT3RISTlCZiIsImljZWJyZWFrZXIiOiJTYWx1dCEgXHUwMGNlbWkgcHV0ZVx1MDE2M2kgb2ZlcmkgbWFpIG11bHRlIGluZm9ybWFcdTAxNjNpaT8iLCJhcHAiOiJmYWNlYm9vayIsImVudHJ5X3BvaW50IjoicG9zdF9jdGEiLCJqaWQiOiI0MDc3NDQyOTEzMVx1MDA0MHMud2hhdHNhcHAubmV0IiwibGlkIjoiOTAxMjYyNjQ4MzIxNzhcdTAwNDBsaWQiLCJzaG93X2tleWJvYXJkIjoxLCJzaG93X2FkX2F0dHJpYnV0aW9uIjoxLCJzb3VyY2UiOiJGQl9Qb3N0Iiwic291cmNlX2lkIjoiNjUyOTIxNjIwOTcyMTM3IiwiY29udGV4dCI6IkFmZW1CR1JQWmJqVk5vNmhYNGtFX2ZCaWJIa2Z0Tms5eXFqaks1aHFyaWZ2bGNmRVI2TkJ3dWdnTTdmRjR2aWFkczIzOTBWVTlucnVfQVdLdjhiekJsLU5BZ3V6UGtnWGU5a2ZIempBNnplYW1iYjFrV2szRkViS3hSNzR3S1ZPSTJHV3FkMGFhMnh0QWlqZFA5OC0tRUc1cFVCX0I4aHRVLXV3V1dXSnZ1Smdvc2Q4R25rVFZCelFHd1cxdHp6TUJnaHg1ak9YWm9na0ZTUTd1SkZZRDBmOEE2VGp6clBRZXNZb3JBd3VHeUZUWGRDazVlZUlTSTZxMXhuUHJyeHg5QkIxM1pHcVd1ajU1Zm5Pd3dMLTVWaTA4X1ZuLVFURXh0WHJHYU5TeHRWTDdQbXZfM0QxUkVUSnZ3N2pIdkhFc1pnak5PRHJWTmE1MVhQRkJpQ19MVXJjTUlPNzVjbTVqTWVpXzRaWCJ9.azqjkXNfRdGPnncIy9KsrKcnbUaSsvOAZcywTbAtKJygS2YVQRm5XwrMkFtsI6hyYQsrzPPhcLTcJta8pSaQgQ"
+            target="_blank"
+          >
+            <span><i class="fa-brands fa-whatsapp"></i></span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <header id="header_container">
+      <header class="header">
+        <div class="logo">
+          <a href="index.html" class="text-shadow-pop-top">Coco Cakes</a>
+        </div>
+        <nav class="navigation">
+          <ul>
+            <li><a id="home">Acasă</a></li>
+            <li><a href="#page_banner">Despre noi</a></li>
+            <li><a href="#page_banner2">Produse</a></li>
+            <li><a href="#prices_container">Prețuri</a></li>
+            <li><a href="#schedule_container">Program</a></li>
+          </ul>
+        </nav>
+        <a class="contact_button">Contactează-ne</a>
+        <button id="menu">
+          <div class="menu_line"></div>
+          <div class="menu_line"></div>
+          <div class="menu_line"></div>
+        </button>
+      </header>
+    </header>
+
+    <main>
+      <section id="hero_container">
+        <section class="hero">
+          <h1 id="hero_motto">
+            Gusturile Tradiției: <br />
+            Povestea Noastră Dulce
+          </h1>
+          <div id="learn_more_container">
+            <div class="learn_more_text">Află mai multe</div>
+            <a class="learn_more_button" href="#page_banner">
+              <i class="ph ph-arrow-down"></i>
+            </a>
+          </div>
+        </section>
+      </section>
+
+      <section class="page_banner" id="page_banner">
+        <div class="marquee">
+          <div class="marquee_content">
+            <span
+              >Coco Cakes & Gustul din Copilărie<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+            <span
+              >Coco Cakes & Gustul din Copilărie<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+            <span
+              >Coco Cakes & Gustul din Copilărie<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+            <span
+              >Coco Cakes & Gustul din Copilărie<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+            <span
+              >Coco Cakes & Gustul din Copilărie<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+            <span
+              >Coco Cakes & Gustul din Copilărie<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+            <span
+              >Coco Cakes & Gustul din Copilărie<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+            <span
+              >Coco Cakes & Gustul din Copilărie<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+          </div>
+          <div class="marquee_content">
+            <span
+              >Coco Cakes & Gustul din Copilărie<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+            <span
+              >Coco Cakes & Gustul din Copilărie<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+            <span
+              >Coco Cakes & Gustul din Copilărie<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+            <span
+              >Coco Cakes & Gustul din Copilărie<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+            <span
+              >Coco Cakes & Gustul din Copilărie<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+            <span
+              >Coco Cakes & Gustul din Copilărie<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+            <span
+              >Coco Cakes & Gustul din Copilărie<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+            <span
+              >Coco Cakes & Gustul din Copilărie<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+          </div>
+        </div>
+      </section>
+
+      <section id="about_container">
+        <section class="about" id="about">
+          <div class="about_content">
+            <div class="about_title">
+              <i class="ph-light ph-cake"></i>Despre Noi
+            </div>
+            <div class="about_title2">FERICIREA ÎNCEPE CU UN DESERT BUN</div>
+            <ul id="about_list">
+              <li class="about_item">
+                <div class="about_circle">
+                  <i class="ph ph-sketch-logo"></i>
+                </div>
+                <div class="about_subtitle_container">
+                  <div class="about_subtitle">CALITATE FĂRĂ COMPROMISURI</div>
+                  <div class="about_description">
+                    Folosim doar ingrediente proaspete și naturale, alese cu
+                    grijă, pentru gusturi autentice care se simt la prima
+                    mușcătură.
+                  </div>
+                </div>
+              </li>
+              <li class="about_item">
+                <div class="about_circle">
+                  <i class="ph ph-heart-straight"></i>
+                </div>
+                <div class="about_subtitle_container">
+                  <div class="about_subtitle">REȚETE CU SUFLET</div>
+                  <div class="about_description">
+                    Combinăm tradiția cofetăriei românești cu influențe moderne,
+                    pentru deserturi care încântă orice generație.
+                  </div>
+                </div>
+              </li>
+              <li class="about_item">
+                <div class="about_circle">
+                  <i class="ph ph-users-three"></i>
+                </div>
+                <div class="about_subtitle_container">
+                  <div class="about_subtitle">
+                    DESERTURI CARE APROPIE OAMENII
+                  </div>
+                  <div class="about_description">
+                    Credem că o prăjitură bună spune o poveste. Iar la noi,
+                    fiecare poveste e împărtășită cu zâmbete.
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="about_quotes">
+            <div class="about_quote" id="about_quote1">
+              <i class="fa-solid fa-quote-left"></i>
+              <div class="about_quote_text">
+                &nbsp;Zâmbet în fiecare felie...
+              </div>
+              <i class="fa-solid fa-quote-right"></i>
+            </div>
+            <div class="about_quote" id="about_quote2">
+              <i class="fa-solid fa-quote-left"></i>
+              <div class="about_quote_text">&nbsp;Gustă fericirea.</div>
+              <i class="fa-solid fa-quote-right"></i>
+            </div>
+            <div class="about_quote" id="about_quote3">
+              <i class="fa-solid fa-quote-left"></i>
+              <div class="about_quote_text">&nbsp;Un desert, o promisiune.</div>
+              <i class="fa-solid fa-quote-right"></i>
+            </div>
+          </div>
+          <!-- <div class="about_window">
                     <div class="about_image"></div>
                     <div class="about_schedule">
                         <i class="fa-regular fa-clock"></i>
@@ -262,370 +366,516 @@
                         </div>
                     </div>
                 </div> -->
-				</section>
-			</div>
+        </section>
+      </section>
 
-			<section class="page_banner" id="page_banner2">
-				<div class="marquee">
-					<div class="marquee_content">
-						<span>Gustul Autentic al Copilăriei<i class="fa-solid fa-caret-left"></i></span>
-						<span>Produse Tradiționale<i class="fa-solid fa-caret-left"></i></span>
-						<span>Bucuria copilăriei într-o felie de tort<i class="fa-solid fa-caret-left"></i></span>
-						<span>Pasiune pentru prăjituri autentice<i class="fa-solid fa-caret-left"></i></span>
-						<span>Gusturi tradiționale, momente speciale<i class="fa-solid fa-caret-left"></i></span>
-						<span>Torturi de casă, din inima cofetăriei<i class="fa-solid fa-caret-left"></i></span>
-						<span>Simplitate, tradiție, savoare<i class="fa-solid fa-caret-left"></i></span>
-						<span>Fiecare prăjitură, o poveste dulce<i class="fa-solid fa-caret-left"></i></span>
+      <section class="page_banner" id="page_banner2">
+        <div class="marquee">
+          <div class="marquee_content">
+            <span
+              >Gustul Autentic al Copilăriei<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+            <span
+              >Produse Tradiționale<i class="fa-solid fa-caret-left"></i
+            ></span>
+            <span
+              >Bucuria copilăriei într-o felie de tort<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+            <span
+              >Pasiune pentru prăjituri autentice<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+            <span
+              >Gusturi tradiționale, momente speciale<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+            <span
+              >Torturi de casă, din inima cofetăriei<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+            <span
+              >Simplitate, tradiție, savoare<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+            <span
+              >Fiecare prăjitură, o poveste dulce<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+          </div>
+          <div class="marquee_content">
+            <span
+              >Gustul Autentic al Copilăriei<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+            <span
+              >Produse Tradiționale<i class="fa-solid fa-caret-left"></i
+            ></span>
+            <span
+              >Bucuria copilăriei într-o felie de tort<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+            <span
+              >Pasiune pentru prăjituri autentice<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+            <span
+              >Gusturi tradiționale, momente speciale<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+            <span
+              >Torturi de casă, din inima cofetăriei<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+            <span
+              >Simplitate, tradiție, savoare<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+            <span
+              >Fiecare prăjitură, o poveste dulce<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+          </div>
+        </div>
+      </section>
+
+      <section id="products_container">
+        <section class="products" id="products">
+          <div id="products_header">
+            <div id="products_title">
+              <i class="fa-solid fa-candy-cane"></i>Produsele Noastre
+            </div>
+            <div id="products_subtitle">
+              Descoperă gustul autentic al deserturilor
+            </div>
+            <div id="products_buttons">
+              <a
+                class="products_button"
+                href="https://www.facebook.com/profile.php?id=100087629145121&locale=ro_RO"
+                target="_blank"
+              >
+                Află mai multe
+              </a>
+              <a class="products_button">Contactează-ne</a>
+            </div>
+          </div>
+
+          <div id="products_content">
+            <div id="products_content_title">
+              <div id="products_content_title1">Comandă Desertul Perfect</div>
+              <div id="products_content_phone">
+                <span><i class="fa-solid fa-phone"></i></span>
+                <span class="products_content_phone_text">0774.429.131</span>
+              </div>
+            </div>
+            <div id="products_content_cakes">
+              <div class="products_content_container">
+                <div class="products_content_image">
+                  <img src="./front_end/public/images/fursecuri.jpg" />
+                </div>
+                <div class="products_content_text">Fursecuri</div>
+              </div>
+              <div class="products_content_container">
+                <div class="products_content_image">
+                  <img src="./front_end/public/images/prajituri.jpg" />
+                </div>
+                <div class="products_content_text">Prajituri</div>
+              </div>
+              <div class="products_content_container">
+                <div class="products_content_image">
+                  <img src="./front_end/public/images/cake6.jpg" />
+                </div>
+                <div class="products_content_text">Torturi</div>
+              </div>
+              <div class="products_content_container">
+                <div class="products_content_image">
+                  <img src="./front_end/public/images/papanasi.jpg" />
+                </div>
+                <div class="products_content_text">Delicii Traditionale</div>
+              </div>
+              <div class="products_content_container">
+                <div class="products_content_image">
+                  <img src="./front_end/public/images/sezon2.jpg" />
+                </div>
+                <div class="products_content_text">Specialitati de Sezon</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section id="prices_container">
+        <section class="prices">
+          <div id="prices_header">
+            <div id="prices_title">
+              <i class="ph ph-coin"></i><span>Prețurile Noastre</span>
+            </div>
+            <div id="prices_subtitle">
+              Bucură-te de gustul perfect, fără griji de preț
+            </div>
+            <div id="prices_buttons">
+              <a
+                class="prices_button"
+                href="https://www.facebook.com/profile.php?id=100087629145121&locale=ro_RO"
+                target="_blank"
+              >
+                Află mai multe
+              </a>
+              <a class="prices_button">Contactează-ne</a>
+            </div>
+          </div>
+          <div id="prices_content">
+            <div id="prices_image">
+              <img src="./front_end/public/images/prices2.jpg" />
+            </div>
+            <div id="prices_list">
+              <div class="prices_item">
+                <div class="prices_item_image">
+                  <img
+                    src="./front_end/public/images/prajituri_asortate.jpg"
+                  />>
+                </div>
+                <div class="prices_item_content">
+                  <div class="prices_item_header">
+                    <div class="prices_item_title">Prăjituri Asortate</div>
+                    <span class="prices_item_line"></span>
+                    <div class="prices_item_price">
+                      <span class="span_price1">80 RON</span>
+                      <span class="span_price2">/ KG</span>
+                    </div>
+                  </div>
+                  <div class="prices_item_description">
+                    O selecție delicioasă de prăjituri tradiționale și moderne,
+                    pregătite cu grijă pentru toate gusturile. De la amandine și
+                    savarine la prăjituri cu nucă, cocos, vanilie sau ciocolată,
+                    fiecare desert spune o poveste dulce.
+                  </div>
+                </div>
+              </div>
+              <div class="prices_item">
+                <div class="prices_item_image">
+                  <img src="./front_end/public/images/torturi_creme.jpg" />
+                </div>
+                <div class="prices_item_content">
+                  <div class="prices_item_header">
+                    <div class="prices_item_title">
+                      Torturi cu diferite creme
+                    </div>
+                    <span class="prices_item_line"></span>
+                    <div class="prices_item_price">
+                      <span class="span_price1">85 RON</span>
+                      <span class="span_price2">/ KG</span>
+                    </div>
+                  </div>
+                  <div class="prices_item_description">
+                    Răsfață-te cu torturi fine, cu creme delicate de ciocolată,
+                    vanilie, fructe sau caramel, perfecte pentru orice ocazie.
+                    Gust rafinat și texturi catifelate în fiecare felie.
+                  </div>
+                </div>
+              </div>
+              <div class="prices_item">
+                <div class="prices_item_image">
+                  <img src="./front_end/public/images/torturi_zahar.jpg" />
+                </div>
+                <div class="prices_item_content">
+                  <div class="prices_item_header">
+                    <div class="prices_item_title">
+                      Torturi în pastă de zahăr
+                    </div>
+                    <span class="prices_item_line"></span>
+                    <div class="prices_item_price">
+                      <span class="span_price1">90 RON</span>
+                      <span class="span_price2">/ KG</span>
+                    </div>
+                  </div>
+                  <div class="prices_item_description">
+                    Torturi spectaculoase, personalizate în pastă de zahăr
+                    pentru evenimente speciale. Design creativ, gust autentic —
+                    ideale pentru aniversări și momente unice.
+                  </div>
+                </div>
+              </div>
+              <div class="prices_item">
+                <div class="prices_item_image">
+                  <img src="./front_end/public/images/cozonac.jpg" />
+                </div>
+                <div class="prices_item_content">
+                  <div class="prices_item_header">
+                    <div class="prices_item_title">Cozonacii Bunicii</div>
+                    <span class="prices_item_line"></span>
+                    <div class="prices_item_price">
+                      <span class="span_price1">85 RON</span>
+                      <span class="span_price2">/ BUC</span>
+                    </div>
+                  </div>
+                  <div class="prices_item_description">
+                    Cozonaci pufoși, umpluți cu nucă, cacao sau rahat, exact cum
+                    îi făcea bunica. Gust tradițional românesc, pregătit cu
+                    dragoste și ingrediente de calitate.
+                  </div>
+                </div>
+              </div>
+              <div class="prices_item">
+                <div class="prices_item_image">
+                  <img src="./front_end/public/images/pasca.jpg" />
+                </div>
+                <div class="prices_item_content">
+                  <div class="prices_item_header">
+                    <div class="prices_item_title">
+                      Pască cu brânză si stafide
+                    </div>
+                    <span class="prices_item_line"></span>
+                    <div class="prices_item_price">
+                      <span class="span_price1">70 RON</span>
+                      <span class="span_price2">/ BUC</span>
+                    </div>
+                  </div>
+                  <div class="prices_item_description">
+                    Desert clasic de sărbătoare, cu umplutură fină de brânză
+                    dulce și stafide aromate. Disponibilă cu aluat fraged sau
+                    fără, pentru toate preferințele.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section id="schedule_container">
+        <section class="schedule">
+          <div class="schedule_content">
+            <div class="schedule_header">
+              <div class="schedule_title">
+                <i class="ph ph-clock"></i>
+                <span>Programul nostru</span>
+              </div>
+              <div class="schedule_subtitle">
+                <span>Momentul perfect pentru ceva dulce</span>
+              </div>
+              <div id="prices_buttons">
+                <a
+                  class="prices_button"
+                  href="https://www.facebook.com/profile.php?id=100087629145121&locale=ro_RO"
+                  target="_blank"
+                >
+                  Află mai multe
+                </a>
+                <a class="prices_button">Contactează-ne</a>
+              </div>
+            </div>
+            <div class="schedule_section">
+              <div class="section_quote">
+                <span
+                  >Vino și simte atmosfera unei cofetării unde fiecare prăjitură
+                  spune o poveste</span
+                >
+                <span id="section_line"></span>
+              </div>
+              <div class="section_schedule">
+                <div class="section_schedule_grid">
+                  <div>Luni - Vineri</div>
+                  <div>:</div>
+                  <div>6.00 - 14.00</div>
+                  <div>Sâmbătă</div>
+                  <div>:</div>
+                  <div>8.00 - 16.00</div>
+                  <div>Duminică</div>
+                  <div>:</div>
+                  <div>10.00 - 18.00</div>
+                  <div>Sărbători</div>
+                  <div>:</div>
+                  <div>Anunțăm</div>
+                </div>
+                <span id="section_line2"></span>
+              </div>
+              <div class="section_message_container">
+                <div class="section_message">
+                  <div class="question_text">Poftă de dulce?</div>
+                  <div id="highlighted_text">
+                    <a
+                      href="https://www.facebook.com/profile.php?id=100087629145121&locale=ro_RO"
+                      target="_blank"
+                    >
+                      Vizitează-ne acum!
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="schedule_image_container">
+            <div class="second_image">
+              <img src="./front_end/public/images/second_image.jpg" />
+            </div>
+            <div class="main_image">
+              <img src="./front_end/public/images/schedule.jpg" />
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section id="testimonials_container">
+        <section class="testimonials">
+          <div class="testimonials_header">
+            <div class="schedule_title">
+              <i class="ph ph-users"></i>
+              <span>Testimonialele Clientilor</span>
+            </div>
+            <div class="schedule_subtitle">
+              <span>Află ce spun cei care ne cunosc deja</span>
+            </div>
+          </div>
+          <div class="splide" id="slider">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="splide__text">
+                    " Cel mai bun cozonac care l-am mâncat vreodată exact gustul
+                    din copilărie. Recomand ! "
+                  </div>
+                  <div class="splide__user">Client - Facebook User</div>
+                </li>
+                <li class="splide__slide">
+                  <div class="splide__text">
+                    " Recomand cu mare drag. Sunt atat de gustoase si arata
+                    amazing 😍💪🥰 "
+                  </div>
+                  <div class="splide__user">Client - Facebook User</div>
+                </li>
+                <li class="splide__slide">
+                  <div class="splide__text">
+                    " Foarte bune ... gust deosebit ! Recomand 100% 😍🥰 "
+                  </div>
+                  <div class="splide__user">Client - Facebook User</div>
+                </li>
+                <li class="splide__slide">
+                  <div class="splide__text">
+                    " Amazing taste! 😋 Must try 10/10 "
+                  </div>
+                  <div class="splide__user">Client - Facebook User</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="testimonials_footer">
+            <div class="question_text">Ne-ai vizitat?</div>
+            <div id="highlighted_text">
+              <a
+                href="https://www.facebook.com/profile.php?id=100087629145121&sk=reviews&locale=ro_RO"
+                target="_blank"
+              >
+                Lasă-ne o recenzie!
+              </a>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section id="contact_container">
+        <section class="contact">
+          <div class="contact_content">
+            <div class="contact_infos">
+				<div class="contact_header">
+					<div class="schedule_title">
+						<i class="ph ph-envelope-simple-open"></i>
+						<span>Contactează-ne</span>
 					</div>
-					<div class="marquee_content">
-						<span>Gustul Autentic al Copilăriei<i class="fa-solid fa-caret-left"></i></span>
-						<span>Produse Tradiționale<i class="fa-solid fa-caret-left"></i></span>
-						<span>Bucuria copilăriei într-o felie de tort<i class="fa-solid fa-caret-left"></i></span>
-						<span>Pasiune pentru prăjituri autentice<i class="fa-solid fa-caret-left"></i></span>
-						<span>Gusturi tradiționale, momente speciale<i class="fa-solid fa-caret-left"></i></span>
-						<span>Torturi de casă, din inima cofetăriei<i class="fa-solid fa-caret-left"></i></span>
-						<span>Simplitate, tradiție, savoare<i class="fa-solid fa-caret-left"></i></span>
-						<span>Fiecare prăjitură, o poveste dulce<i class="fa-solid fa-caret-left"></i></span>
+					<div class="schedule_subtitle">
+						<span>Hai să păstrăm legătura </span>
+					</div>
+					<div class="contact_description">
+						<span>
+							Ai o întrebare sau o propunere? Suntem aici pentru tine. Completează formularul și revenim cât mai curând.
+						</span>
 					</div>
 				</div>
-			</section>
-
-			<div id="products_container">
-				<section class="products" id="products">
-					<div id="products_header">
-						<div id="products_title"><i class="fa-solid fa-candy-cane"></i>Produsele Noastre</div>
-						<div id="products_subtitle">Descoperă gustul autentic al deserturilor</div>
-						<div id="products_buttons">
-							<a
-								class="products_button"
-								href="https://www.facebook.com/profile.php?id=100087629145121&locale=ro_RO"
-								target="_blank"
-							>
-								Află mai multe
+				<div class="contact_info">
+					<div class="contact_info1">
+						<div class="contact_section">
+							
+							<a class="info_container" href="tel:+40743060151">
+								<i class="ph ph-phone"></i>
 							</a>
-							<a class="products_button">Contactează-ne</a>
-						</div>
-					</div>
-
-					<div id="products_content">
-						<div id="products_content_title">
-							<div id="products_content_title1">Comandă Desertul Perfect</div>
-							<div id="products_content_phone">
-								<span><i class="fa-solid fa-phone"></i></span>
-								<span class="products_content_phone_text">0774.429.131</span>
+							<div class="info_title">
+								Telefon
+							</div>
+							<div class="info_subtitle">
+								+40 774 429 131
 							</div>
 						</div>
-						<div id="products_content_cakes">
-							<div class="products_content_container">
-								<div class="products_content_image">
-									<img src="./front_end/public/images/fursecuri.jpg" />
-								</div>
-								<div class="products_content_text">Fursecuri</div>
-							</div>
-							<div class="products_content_container">
-								<div class="products_content_image">
-									<img src="./front_end/public/images/prajituri.jpg" />
-								</div>
-								<div class="products_content_text">Prajituri</div>
-							</div>
-							<div class="products_content_container">
-								<div class="products_content_image">
-									<img src="./front_end/public/images/cake6.jpg" />
-								</div>
-								<div class="products_content_text">Torturi</div>
-							</div>
-							<div class="products_content_container">
-								<div class="products_content_image">
-									<img src="./front_end/public/images/papanasi.jpg" />
-								</div>
-								<div class="products_content_text">Delicii Traditionale</div>
-							</div>
-							<div class="products_content_container">
-								<div class="products_content_image">
-									<img src="./front_end/public/images/sezon2.jpg" />
-								</div>
-								<div class="products_content_text">Specialitati de Sezon</div>
-							</div>
-						</div>
-					</div>
-				</section>
-			</div>
-
-			<div id="prices_container">
-				<section class="prices">
-					<div id="prices_header">
-						<div id="prices_title"><i class="ph ph-coin"></i><span>Prețurile Noastre</span></div>
-						<div id="prices_subtitle">Bucură-te de gustul perfect, fără griji de preț</div>
-						<div id="prices_buttons">
-							<a
-								class="prices_button"
-								href="https://www.facebook.com/profile.php?id=100087629145121&locale=ro_RO"
-								target="_blank"
-							>
-								Află mai multe
+						<div class="contact_line"></div>
+						<div class="contact_section">
+							<a class="info_container" href="mailto:corinadragusin1985@gmail.com">
+								<i class="ph ph-envelope-simple"></i>
 							</a>
-							<a class="prices_button">Contactează-ne</a>
-						</div>
-					</div>
-					<div id="prices_content">
-						<div id="prices_image"><img src="./front_end/public/images/prices2.jpg" /></div>
-						<div id="prices_list">
-							<div class="prices_item">
-								<div class="prices_item_image">
-									<img src="./front_end/public/images/prajituri_asortate.jpg" />>
-								</div>
-								<div class="prices_item_content">
-									<div class="prices_item_header">
-										<div class="prices_item_title">Prăjituri Asortate</div>
-										<span class="prices_item_line"></span>
-										<div class="prices_item_price">
-											<span class="span_price1">80 RON</span>
-											<span class="span_price2">/ KG</span>
-										</div>
-									</div>
-									<div class="prices_item_description">
-										O selecție delicioasă de prăjituri tradiționale și moderne, pregătite cu grijă
-										pentru toate gusturile. De la amandine și savarine la prăjituri cu nucă, cocos,
-										vanilie sau ciocolată, fiecare desert spune o poveste dulce.
-									</div>
-								</div>
+							<div class="info_title">
+								E-Mail
 							</div>
-							<div class="prices_item">
-								<div class="prices_item_image">
-									<img src="./front_end/public/images/torturi_creme.jpg" />
-								</div>
-								<div class="prices_item_content">
-									<div class="prices_item_header">
-										<div class="prices_item_title">Torturi cu diferite creme</div>
-										<span class="prices_item_line"></span>
-										<div class="prices_item_price">
-											<span class="span_price1">85 RON</span>
-											<span class="span_price2">/ KG</span>
-										</div>
-									</div>
-									<div class="prices_item_description">
-										Răsfață-te cu torturi fine, cu creme delicate de ciocolată, vanilie, fructe sau
-										caramel, perfecte pentru orice ocazie. Gust rafinat și texturi catifelate în
-										fiecare felie.
-									</div>
-								</div>
-							</div>
-							<div class="prices_item">
-								<div class="prices_item_image">
-									<img src="./front_end/public/images/torturi_zahar.jpg" />
-								</div>
-								<div class="prices_item_content">
-									<div class="prices_item_header">
-										<div class="prices_item_title">Torturi în pastă de zahăr</div>
-										<span class="prices_item_line"></span>
-										<div class="prices_item_price">
-											<span class="span_price1">90 RON</span>
-											<span class="span_price2">/ KG</span>
-										</div>
-									</div>
-									<div class="prices_item_description">
-										Torturi spectaculoase, personalizate în pastă de zahăr pentru evenimente
-										speciale. Design creativ, gust autentic — ideale pentru aniversări și momente
-										unice.
-									</div>
-								</div>
-							</div>
-							<div class="prices_item">
-								<div class="prices_item_image">
-									<img src="./front_end/public/images/cozonac.jpg" />
-								</div>
-								<div class="prices_item_content">
-									<div class="prices_item_header">
-										<div class="prices_item_title">Cozonacii Bunicii</div>
-										<span class="prices_item_line"></span>
-										<div class="prices_item_price">
-											<span class="span_price1">85 RON</span>
-											<span class="span_price2">/ BUC</span>
-										</div>
-									</div>
-									<div class="prices_item_description">
-										Cozonaci pufoși, umpluți cu nucă, cacao sau rahat, exact cum îi făcea bunica.
-										Gust tradițional românesc, pregătit cu dragoste și ingrediente de calitate.
-									</div>
-								</div>
-							</div>
-							<div class="prices_item">
-								<div class="prices_item_image">
-									<img src="./front_end/public/images/pasca.jpg" />
-								</div>
-								<div class="prices_item_content">
-									<div class="prices_item_header">
-										<div class="prices_item_title">Pască cu brânză si stafide</div>
-										<span class="prices_item_line"></span>
-										<div class="prices_item_price">
-											<span class="span_price1">70 RON</span>
-											<span class="span_price2">/ BUC</span>
-										</div>
-									</div>
-									<div class="prices_item_description">
-										Desert clasic de sărbătoare, cu umplutură fină de brânză dulce și stafide
-										aromate. Disponibilă cu aluat fraged sau fără, pentru toate preferințele.
-									</div>
-								</div>
+							<div class="info_subtitle">
+								corinadragusin1985@gmail.com
 							</div>
 						</div>
 					</div>
-				</section>
-			</div>
-
-            <div id="schedule_container">
-                <section class="schedule">
-                    
-					<div class="schedule_content">
-						<div class="schedule_header">
-							<div class="schedule_title">
-								<i class="ph ph-clock"></i>
-								<span>Programul nostru</span>
-							</div>
-							<div class="schedule_subtitle">
-								<span>Momentul perfect pentru ceva dulce</span>
-							</div>
-							<div id="prices_buttons">
-							<a
-								class="prices_button"
-								href="https://www.facebook.com/profile.php?id=100087629145121&locale=ro_RO"
-								target="_blank"
-							>
-								Află mai multe
+					<div class="contact_info2">
+						<div class="contact_section2">
+							<a class="info_container2" href="https://maps.app.goo.gl/ZfwD9GFQaZwHt3Md9" target="_blank">
+								<i class="ph ph-map-pin"></i>
 							</a>
-							<a class="prices_button">Contactează-ne</a>
-						</div>
-						</div>
-						<div class="schedule_section">
-							<div class="section_quote">
-								<span>Vino și simte atmosfera unei cofetării unde fiecare prăjitură spune o poveste</span>
-								<span id="section_line"></span>
-							</div>
-							<div class="section_schedule">
-								<div class="section_schedule_grid">
-									
-									<div>Luni - Vineri</div><div>:</div>
-									<div>6.00 - 14.00</div>
-									<div>Sâmbătă</div><div>:</div>
-									<div>8.00 - 16.00</div>
-									<div>Duminică</div><div>:</div>
-									<div>10.00 - 18.00</div>
-									<div>Sărbători</div><div>:</div>
-									<div>Anunțăm</div>
-								</div>
-								<span id="section_line2"></span>
-
-							</div>
-							<div class="section_message_container">
-								<div class="section_message">
-									<div class="question_text">Poftă de dulce?</div>
-									<div id="highlighted_text">
-										<a
-											href="https://www.facebook.com/profile.php?id=100087629145121&locale=ro_RO"
-											target="_blank"
-										>
-											Vizitează-ne acum!
-										</a>
-									</div>
-								</div>
+							<div class="info_title2">
+								<span>Adresă</span>
 							</div>
 						</div>
-					</div>
-					<div class="schedule_image_container">
-						
-						<div class="second_image">
-							<img src="./front_end/public/images/second_image.jpg" >
-						</div>
-						<div class="main_image">
-							<img src="./front_end/public/images/schedule.jpg">
-						</div>
-						
-					</div>
-                    
-					
-				</section>
-            </div>
-
-			<div id="testimonials_container">
-				<section class="testimonials">
-					<div class="testimonials_header">
-							<div class="schedule_title">
-								<i class="ph ph-users"></i>
-								<span>Testimonialele Clientilor</span>
-							</div>
-							<div class="schedule_subtitle">
-								<span>Află ce spun cei care ne cunosc deja</span>
-							</div>
-					</div>
-					<div class="splide" id="slider">
-						<div class="splide__track">
-							<ul class="splide__list">
-								<li class="splide__slide">
-									<div class="splide__text">
-										" Cel mai bun cozonac care l-am mâncat vreodată exact gustul din copilărie. Recomand ! "
-									</div>
-									<div class="splide__user">
-										Client - Facebook User
-									</div>
-								</li>
-								<li class="splide__slide">
-									<div class="splide__text">
-										" Recomand cu mare drag. Sunt atat de gustoase si arata amazing 😍💪🥰 "
-									</div>
-									<div class="splide__user">
-										Client - Facebook User
-									</div>
-								</li>
-								<li class="splide__slide">
-									<div class="splide__text">
-										" Foarte bune ... gust deosebit ! Recomand 100% 😍🥰 "
-									</div>
-									<div class="splide__user">
-										Client - Facebook User
-									</div>
-								</li>
-								<li class="splide__slide">
-									<div class="splide__text">
-										" Amazing taste! 😋 Must try 10/10 "
-									</div>
-									<div class="splide__user">
-										Client - Facebook User
-									</div>
-								</li>
-							</ul>
-						</div>
-						
-					</div>
-					<div class="testimonials_footer">
-						<div class="question_text">Ne-ai vizitat?</div>
-								<div id="highlighted_text">
-									<a
-										href="https://www.facebook.com/profile.php?id=100087629145121&sk=reviews&locale=ro_RO"
-										target="_blank"
-									>
-										Lasă-ne o recenzie!
-									</a>
-								</div>
+						<div class="info_subtitle2">
+							Strada Râureni Nr. 181, Râmnicu Vâlcea, România
 						</div>
 					</div>
-				</section>
+				</div>
 			</div>
-
-			<div id="contact_container">
+            <div class="contact_form">
 
 			</div>
+          </div>
+          <div class="contact_location">
+            <div id="map"></div>
+          </div>
+        </section>
+      </section>
+    
+	</main>
 
-		</main>
+    <footer></footer>
 
-		<footer></footer>
-		<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-		<!-- Particles.js -->
-		<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
-		<!-- Splide JS -->
-		 
-		<script src="./front_end/src/js/particles.js"></script>
-		<script src="./front_end/src/js/panel.js"></script>
-		<script src="./front_end/src/js/slider.js"></script>
-		<script src="./front_end/src/js/scroll.js"></script>
-	</body>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <!-- Splide JS -->
+
+    <script src="./front_end/src/js/particles.js"></script>
+    <script src="./front_end/src/js/panel.js"></script>
+    <script src="./front_end/src/js/slider.js"></script>
+    <script src="./front_end/src/js/scroll.js"></script>
+    <script src="./front_end/src/js/map.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3sEWrhdqdE7zM1We9DC_X0E66satDrp4&callback=initMap"
+    ></script>
+  </body>
 </html>
