@@ -1,20 +1,25 @@
+auzi e buna urmatoarea structura pentru contopirea backendului cu front endul? adica pot sa dau fetch la data din folderul front end si in backend sa fac backendul? intreb pentru ca spre ex front endul am stat mult sa ajung la varianta asta ca nu stiam ca index.html trebuie sa fie primul ca sa fie vazut de github pages sau orice host sau ca imi trebuie un public unde sa tin reusrsele organizate de cele private etc. deci cam spune mi daca e bine integrad backendul (fiind un folder complet diferit ca in structura) si daca e bine spune mi si cam ce va contine si explica mi cum functioneaza
+
 ```
-📁Coco Cakes
 └── 📁back_end
-└── 📁resurse
 └── 📁front_end
     └── 📁public
         └── 📁fonts
+            └── Cookie-Regular.ttf
             └── CormorantInfant-VariableFont_wght.ttf
             └── CutiveMono-Regular.ttf
+            └── DancingScript-VariableFont_wght.ttf
             └── DEMO-averestitleroman-regular.otf
+            └── Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf
             └── Khamden Script.otf
+            └── Nunito-VariableFont_wght.ttf
+            └── Quicksand-VariableFont_wght.ttf
+            └── RobotoFlex-VariableFont_GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf
             └── SourGummy-VariableFont_wdth,wght.ttf
         └── 📁images
+            └── about_background.jpg
             └── about.jpg
-            └── bg.jpg
-            └── bg2.jpg
-            └── cake.png
+            └── cake_icon.png
             └── cake1.jpg
             └── cake2.jpg
             └── cake3.jpg
@@ -22,14 +27,51 @@
             └── cake5.jpg
             └── cake6.jpg
             └── close-stroke.png
+            └── cozonac.jpg
+            └── fursecuri.jpg
+            └── muffin_5392141.png
+            └── papanasi.jpg
+            └── pasca.jpg
+            └── prajituri_asortate.jpg
+            └── prajituri.jpg
+            └── prices_background.jpg
+            └── prices_background2.jpg
+            └── prices.jpg
+            └── prices2.jpg
+            └── products_background.jpg
+            └── schedule.jpg
+            └── second_image.jpg
+            └── sezon1.jpg
+            └── sezon2.jpg
+            └── sezon3.jpeg
+            └── testimonials.jpg
+            └── torturi_creme.jpg
+            └── torturi_zahar.jpg
+            └── traditionale.jpg
     └── 📁src
         └── 📁css
             └── animations.css
             └── base.css
             └── responsive.css
+            └── 📁style
             └── style.css
-        └── index.html
+                └── about.css
+                └── background.css
+                └── banner.css
+                └── contact.css
+                └── header.css
+                └── hero.css
+                └── page_banner.css
+                └── panel.css
+                └── prices.css
+                └── products.css
+                └── schedule.css
+                └── testimonials.css
         └── 📁js
+            └── contact.js
+            └── map.js
             └── panel.js
             └── particles.js
+            └── scroll.js
+            └── slider.js
 ```
