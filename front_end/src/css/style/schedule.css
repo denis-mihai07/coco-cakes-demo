@@ -196,7 +196,7 @@
 .section_schedule > #section_line2 {
     height: auto;
     width: 40%;
-    border: 1px groove #e96767;
+    border: 1px groove #cf7070;
 }
 
 
@@ -223,20 +223,17 @@
     font-size: 0.9rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    text-transform: uppercase;
     letter-spacing: 2px;
     color: rgb(255, 255, 255);
     display: flex;
     justify-content: end;
     align-items: center;
-
 }
 
 #highlighted_text {
     font-size: 0.9rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    text-transform: uppercase;
     letter-spacing: 2px;
     color: #ea7777 !important;
     font-weight: bold;
@@ -247,6 +244,8 @@
     text-decoration: underline;
     text-underline-offset: 0.3rem;
     transition: all 0.2s ease-in-out;
+
+    
 }
 
 #highlighted_text:hover {

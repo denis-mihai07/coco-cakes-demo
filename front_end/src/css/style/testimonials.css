@@ -86,8 +86,6 @@
     justify-content: center;
     align-items: center;
     color: rgb(255, 255, 255);
-
-
 }
 
 .splide__user {
@@ -103,8 +101,6 @@
     align-items: center;
     flex-direction: column;
     color: rgb(255, 177, 177);
-
-
 }
 
 
@@ -145,7 +141,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap: 13px;
+    gap: 0.8rem;
     user-select: none;
 }
 
