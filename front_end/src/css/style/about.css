@@ -1,199 +1,208 @@
 #about_container {
-    height: 890px;
-    width: 100%;
-    max-height: 1000px;
-    max-width: 2000px;
-    overflow: hidden;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	height: 890px;
+	width: 100%;
+	max-height: 1000px;
+	max-width: 2000px;
+	overflow: hidden;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .about {
-    height: 100%;
-    width: 100%;
-    background: url(../../../public/images/about_background.jpg) no-repeat center center fixed;
-    background-size: cover;
-    position: relative;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    z-index: 0;
+	height: 100%;
+	width: 100%;
+	background: url(../../../public/images/about_background.jpg) no-repeat center center fixed;
+	background-size: cover;
+	position: relative;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	z-index: 0;
 }
 
-
 .about_content {
-    height: 700px;
-    width: 700px;
-    min-height: 700px;
-    min-width: 700px;
-    background-color: #0b0b0be8;
-    border: 1px solid rgb(45, 45, 45);
-    border-radius: 5%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 60px;
+	height: 700px;
+	width: 700px;
+	min-height: 700px;
+	min-width: 700px;
+	background-color: #0b0b0be8;
+	border: 1px solid rgb(45, 45, 45);
+	border-radius: 5%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 60px;
 }
 
 .about_content .about_title {
-    font-size: 1rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: rgb(255, 255, 255);
-    display: flex;
-    align-items: center;
+	font-size: 1rem;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: rgb(255, 255, 255);
+	display: flex;
+	align-items: center;
 }
 
 .about_content .about_title i {
-    color: #ff9e9e;
-    font-size: 1.3rem;
-    margin: 0 10px 0 0;
+	color: #ff9e9e;
+	font-size: 1.3rem;
+	margin: 0 10px 0 0;
 }
 
 .about_content .about_title2 {
-    font-size: clamp(1.5rem, 2.5rem, 3rem);
-    margin: 5px 0;
-    font-family: Infant;
-    color: rgb(255, 255, 255);
-    display: flex;
-    align-items: center;
+	font-size: clamp(1.5rem, 2.5rem, 3rem);
+	margin: 5px 0;
+	font-family: Infant;
+	color: rgb(255, 255, 255);
+	display: flex;
+	align-items: center;
 }
 
 #about_list {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: start;
-    flex-direction: column;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: start;
+	flex-direction: column;
 }
 
 .about_item {
-    height: 30%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+	height: 30%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	user-select: none;
+}
+
+.about_item:hover .about_circle {
+	background-color: #cf7070;
+}
+
+.about_item:hover .about_circle i {
+	color: white;
 }
 
 .about_circle {
-    height: 60px;
-    width: 60px;
-    border-radius: 100%;
-    margin: 0px 20px;
-    background-color: rgb(45, 45, 45);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 0.2s ease-in-out;
+	height: 60px;
+	width: 60px;
+	border-radius: 100%;
+	margin: 0px 20px;
+	background-color: rgb(45, 45, 45);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: background-color 0.2s ease-in-out;
+	cursor: pointer;
 }
 
 .about_circle:hover {
-    background-color: #cf7070;
+	background-color: #cf7070;
 }
 
 .about_circle:hover i {
-    color: white;
+	color: white;
 }
 
 .about_circle i {
-    font-size: clamp(1.5rem,  1.6rem, 3rem);
-    color: #cf7070;
+	font-size: clamp(1.5rem, 1.6rem, 3rem);
+	color: #cf7070;
 }
 
 .about_subtitle_container {
-    height: 80%;
-    width: 85%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+	height: 80%;
+	width: 85%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 }
 
 .about_subtitle {
-    height: 40%;
-    width: 100%;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    color: white;
-    font-family: Infant;
-    font-size: 1.3rem;
+	height: 40%;
+	width: 100%;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	color: white;
+	font-family: Infant;
+	font-size: 1.3rem;
 }
 
 .about_description {
-    height: 60%;
-    width: 100%;
-    color: #b0b0b0;
-    font-family: Infant;
-    font-size: 1.1rem;
+	height: 60%;
+	width: 100%;
+	color: #b0b0b0;
+	font-family: Infant;
+	font-size: 1.1rem;
 }
 
 .about_quotes {
-    width: 50%;
-    height: 90%;
-    position: relative;
+	width: 50%;
+	height: 90%;
+	position: relative;
 }
 
 .about_quote {
-    width: 80%;
-    height: 10%;
-    text-wrap: nowrap;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Script;
-    color: #ffffff;
-    position: absolute;
-    user-select: none;
+	width: 80%;
+	height: 10%;
+	text-wrap: nowrap;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Script;
+	color: #ffffff;
+	position: absolute;
+	user-select: none;
 }
 
 .about_quote div {
-    font-size: 3rem;
+	font-size: 3rem;
 }
 
 .about_quote i {
-    font-size: 1.5rem;
-    margin: 0px 10px;
+	font-size: 1.5rem;
+	margin: 0px 10px;
 }
 
 .fa-quote-left {
-    transform: translateY(100%);
+	transform: translateY(100%);
 }
 
 .fa-quote-right {
-    transform: translateY(-100%);
+	transform: translateY(-100%);
 }
 
 #about_quote1 {
-    top: 5%;
-    left: 25%;
-    transform: rotate(8deg);
+	top: 5%;
+	left: 25%;
+	transform: rotate(8deg);
 }
 
 #about_quote1 div {
-    font-size: 3.5rem !important;
+	font-size: 3.5rem !important;
 }
 
 #about_quote2 {
-    top: 40%;
-    left: 25%;
-    transform: rotate(-8deg);
+	top: 40%;
+	left: 25%;
+	transform: rotate(-8deg);
 }
 
 #about_quote2 div {
-    font-size: 5.5rem !important;
+	font-size: 5.5rem !important;
 }
 
 #about_quote3 {
-    top: 75%;
-    left: 5%;
-    transform: rotate(5deg);
+	top: 75%;
+	left: 5%;
+	transform: rotate(5deg);
 }
 
 #about_quote3 div {
-    font-size: 4rem !important;
+	font-size: 4rem !important;
 }

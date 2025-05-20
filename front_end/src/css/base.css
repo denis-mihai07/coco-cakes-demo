@@ -1,127 +1,128 @@
 @font-face {
-    font-family: Cookie;
-    src: url(../../public/fonts/Cookie-Regular.ttf);
+	font-family: Cookie;
+	src: url(../../public/fonts/Cookie-Regular.ttf);
 }
 
 @font-face {
-    font-family: Hoss;
-    src: url(../../public/fonts/SourGummy-VariableFont_wdth\,wght.ttf);
+	font-family: Hoss;
+	src: url(../../public/fonts/SourGummy-VariableFont_wdth\wght.ttf);
 }
 
 @font-face {
-    font-family: Infant;
-    src: url(../../public/fonts/CormorantInfant-VariableFont_wght.ttf);
+	font-family: Infant;
+	src: url(../../public/fonts/CormorantInfant-VariableFont_wght.ttf);
 }
 
 @font-face {
-    font-family: Cutive;
-    src: url(../../public/fonts/SourGummy-VariableFont_wdth\,wght.ttf);
-    
+	font-family: Cutive;
+	src: url(../../public/fonts/SourGummy-VariableFont_wdth\wght.ttf);
 }
 
 @font-face {
-    font-family: Script;
-    src: url(../../public/fonts/DancingScript-VariableFont_wght.ttf);
+	font-family: Script;
+	src: url(../../public/fonts/DancingScript-VariableFont_wght.ttf);
 }
 
 @font-face {
-    font-family: Fraunces;
-    src: url(../../public/fonts/Fraunces-VariableFont_wght.ttf);
+	font-family: Fraunces;
+	src: url(../../public/fonts/Fraunces-VariableFont_wght.ttf);
 }
 
 @font-face {
-    font-family: Nunito;
-    src: url(../../public/fonts/Quicksand-VariableFont_wght.ttf)
+	font-family: Nunito;
+	src: url(../../public/fonts/Quicksand-VariableFont_wght.ttf);
 }
 
 ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
+	width: 8px;
+	height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #ffffff;
+	background: #ffffff;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #cf7070; 
-    border-radius: 5%; 
+	background: #cf7070;
+	border-radius: 5%;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #a95555;
+	background: #a95555;
 }
 
 ::-webkit-scrollbar-thumb:active {
-    background: #7d3f3f;
+	background: #7d3f3f;
 }
 
 :root {
-    --main-color: #c16161;
-    --second-color: #fcd2d2;
-    --third-color: #000000;
-    --fourth-color: #7d3f3f;
-    --fifth-color: #a95555;
+	--main-color: #c16161;
+	--second-color: #fcd2d2;
+	--third-color: #000000;
+	--fourth-color: #7d3f3f;
+	--fifth-color: #a95555;
 }
 
 button {
-    border: none;
-    outline: none;
-    background: none;
-    box-shadow: none;
-    cursor: pointer;
+	border: none;
+	outline: none;
+	background: none;
+	box-shadow: none;
+	cursor: pointer;
 }
-  
 
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
-
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+	text-decoration: none;
+	color: inherit;
 }
 
-ul, ol {
-    list-style: none;
+ul,
+ol {
+	list-style: none;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+	max-width: 100%;
+	height: auto;
+	display: block;
 }
 
-input, textarea {
-    all: unset;
+input,
+textarea {
+	all: unset;
 }
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus {
-    background-color: transparent !important;
-    color: white !important;
-    font-family: Nunito;
-    transition: background-color 9999s ease-in-out 0s;
+	background-color: transparent !important;
+	color: white !important;
+	font-family: Nunito;
+	transition: background-color 9999s ease-in-out 0s;
 }
 
 input:-webkit-autofill,
 textarea:-webkit-autofill {
-    -webkit-text-fill-color: white !important;   
-    background-color: transparent !important;
-    transition: background-color 9999s ease-in-out 0s;
+	-webkit-text-fill-color: white !important;
+	background-color: transparent !important;
+	transition: background-color 9999s ease-in-out 0s;
 }

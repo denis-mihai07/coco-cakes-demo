@@ -19,6 +19,12 @@
   <link rel="stylesheet" type="text/css"
     href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/light/style.css" />
 
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+
+
   <!-- Splide CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css" />
 
@@ -35,10 +41,12 @@
   <link rel="stylesheet" href="./front_end/src/css/style/products.css" />
   <link rel="stylesheet" href="./front_end/src/css/style/prices.css" />
   <link rel="stylesheet" href="./front_end/src/css/style/schedule.css" />
+  <link rel="stylesheet" href="./front_end/src/css/style/products_panel.css" />
 
   <link rel="stylesheet" href="./front_end/src/css/style/testimonials.css" />
   <link rel="stylesheet" href="./front_end/src/css/responsive.css" />
   <link rel="stylesheet" href="./front_end/src/css/style/contact.css" />
+  <link rel="stylesheet" href="./front_end/src/css/style/footer.css" />
 </head>
 
 <body>
@@ -88,6 +96,35 @@
       </div>
     </article>
   </div>
+
+  <!-- <article id="products_panel">
+
+    <div class="panel2_header">
+      <button id="close_button">
+        <div class="close_button_line" id="line1"></div>
+        <div class="close_button_line" id="line2"></div>
+      </button>
+      <div class="panel2_title">
+        TITLU
+      </div>
+      <div class="panel2_description">
+        Desciere
+      </div>
+    </div>
+    <div class="panel2_content">
+      <div class="panel2_image">
+        <img src="./front_end/public/images/cake5.jpg">
+      </div>
+      <div class="panel2_image">
+        <img src="./front_end/public/images/cake5.jpg">
+      </div>
+      <div class="panel2_image">
+        <img src="./front_end/public/images/cake5.jpg">
+      </div>
+
+    </div>
+  </article> -->
+
 
   <div class="banner">
     <div class="banner_container">
@@ -191,7 +228,7 @@
           </div>
           <div class="about_title2">FERICIREA ÎNCEPE CU UN DESERT BUN</div>
           <ul id="about_list">
-            <li class="about_item">
+            <a class="about_item">
               <div class="about_circle">
                 <i class="ph ph-sketch-logo"></i>
               </div>
@@ -203,8 +240,8 @@
                   mușcătură.
                 </div>
               </div>
-            </li>
-            <li class="about_item">
+            </a>
+            <a class="about_item">
               <div class="about_circle">
                 <i class="ph ph-heart-straight"></i>
               </div>
@@ -215,8 +252,8 @@
                   pentru deserturi care încântă orice generație.
                 </div>
               </div>
-            </li>
-            <li class="about_item">
+            </a>
+            <a class="about_item">
               <div class="about_circle">
                 <i class="ph ph-users-three"></i>
               </div>
@@ -229,7 +266,7 @@
                   fiecare poveste e împărtășită cu zâmbete.
                 </div>
               </div>
-            </li>
+            </a>
           </ul>
         </div>
         <div class="about_quotes">
@@ -709,7 +746,6 @@
               </div>
             </div>
             <form id="contact_form">
-              <input type="hidden" name="access_key" value="567a74d7-470f-47c9-8af0-7da0ff8a1eda">
               <div class="contact_input_container">
                 <input type="text" name="First Name" id="first_name" class="contact_input" placeholder=" ">
                 <label for="name">Numele Tău</label>
@@ -756,7 +792,77 @@
 
   </main>
 
-  <footer></footer>
+  <footer id="footer_container">
+    <footer class="footer">
+      <div class="footer_content">
+        <div class="footer_info">
+          <div class="footer_icon">
+            <i class="ph ph-phone"></i>
+          </div>
+          <div class="footer_title">
+            <span>Contactează-ne</span>
+          </div>
+          <div class="footer_subtitle">
+            <span>+40&nbsp;774&nbsp;429&nbsp;131</span>
+            <span>corinadragusin1985@gmail.com</span>
+          </div>
+          <a class="contact_button">Contactează-ne</a>
+        </div>
+        <div class="footer_info" id="footer_adress">
+          <div class="footer_icon">
+            <i class="ph ph-map-pin"></i>
+          </div>
+          <div class="footer_title">
+            <span>Adresă</span>
+          </div>
+          <div class="footer_subtitle">
+            <span>Strada Râureni Nr. 181,<br> Râmnicu Vâlcea, România</span>
+          </div>
+          <a class="contact_button">Vizitează-ne</a>
+        </div>
+        <div class="footer_info">
+          <div class="footer_icon">
+            <i class="ph ph-alarm"></i>
+          </div>
+          <div class="footer_title">
+            <span>Program</span>
+          </div>
+          <div class="footer_subtitle">
+            <span>
+              L - V : 6.00 - 14.00 <br>
+              S: 8.00 - 16.00 <br>
+              D: 10.00 - 18.00
+            </span>
+          </div>
+          <a class="contact_button">Află mai multe</a>
+        </div>
+        <div class="footer_footer">
+          <div class="copyright">
+            <span>Copyright &#169; 2025 All Rights Reserved.</span>
+          </div>
+          <div class="footer_logo">
+            <div class="footer_circle">
+              <i class="bi bi-cake2"></i>
+            </div>
+            <div class="footer_logo_name">
+              Coco Cake's
+            </div>
+          </div>
+          <div class="footer_socials">
+            <a href="https://www.instagram.com/cococakesro/" target="_blank">
+              <span><i class="fa-brands fa-instagram"></i></span>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100087629145121&locale=ro_RO" target="_blank">
+              <span><i class="fa-brands fa-facebook-f"></i></span>
+            </a>
+            <a href="https://wa.me/40774429131" target="_blank">
+              <span><i class="fa-brands fa-whatsapp"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <!-- Particles.js -->
@@ -769,6 +875,7 @@
   <script src="./front_end/src/js/scroll.js"></script>
   <script src="./front_end/src/js/map.js"></script>
   <script src="./front_end/src/js/contact.js"></script>
+  <script src="./front_end/src/js/products_panel.js"></script>
   <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3sEWrhdqdE7zM1We9DC_X0E66satDrp4&callback=initMap"></script>
 </body>

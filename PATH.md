@@ -1,5 +1,3 @@
-auzi e buna urmatoarea structura pentru contopirea backendului cu front endul? adica pot sa dau fetch la data din folderul front end si in backend sa fac backendul? intreb pentru ca spre ex front endul am stat mult sa ajung la varianta asta ca nu stiam ca index.html trebuie sa fie primul ca sa fie vazut de github pages sau orice host sau ca imi trebuie un public unde sa tin reusrsele organizate de cele private etc. deci cam spune mi daca e bine integrad backendul (fiind un folder complet diferit ca in structura) si daca e bine spune mi si cam ce va contine si explica mi cum functioneaza
-
 ```
 └── 📁back_end
 └── 📁front_end
