@@ -65,7 +65,7 @@
 	height: 100%;
 	width: 100%;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	align-items: start;
 	flex-direction: column;
 }
@@ -145,6 +145,7 @@
 	width: 50%;
 	height: 90%;
 	position: relative;
+	overflow: hidden;
 }
 
 .about_quote {
@@ -205,4 +206,51 @@
 
 #about_quote3 div {
 	font-size: 4rem !important;
+}
+
+@media (max-width: 1024px) {
+	.about_quotes {
+		display: none;
+	}
+}
+
+@media (max-width: 425px) {
+	.about_content {
+		height: 95%;
+		width: 400px;
+		min-height: 95%;
+		min-width: 400px;
+		padding: 50px;
+	}
+	.about_content .about_title {
+		font-size: 0.8rem;
+	}
+	.about_content .about_title i {
+		font-size: 1.1rem;
+	}
+	.about_content .about_title2 {
+		font-size: 1.7rem;
+	}
+
+	#about_list {
+		flex-direction: column;
+	}
+
+	.about_item {
+		flex-direction: column;
+	}
+
+	.about_subtitle {
+		font-size: 1rem;
+		justify-content: center;
+		text-align: center;
+	}
+	.about_description {
+		height: 60%;
+		width: 100%;
+		color: #b0b0b0;
+		font-family: Infant;
+		font-size: 0.9rem;
+		text-align: center;
+	}
 }
