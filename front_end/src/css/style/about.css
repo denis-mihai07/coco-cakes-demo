@@ -223,16 +223,19 @@
 		padding: 50px;
 	}
 	.about_content .about_title {
+		height: auto;
 		font-size: 0.8rem;
 	}
 	.about_content .about_title i {
 		font-size: 1.1rem;
 	}
 	.about_content .about_title2 {
+		height: 10%;
 		font-size: 1.7rem;
 	}
 
 	#about_list {
+		height: 90%;
 		flex-direction: column;
 	}
 
