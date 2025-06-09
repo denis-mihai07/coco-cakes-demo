@@ -1,5 +1,5 @@
 #prices_container {
-	height: 1200px;
+	height: 900px;
 	width: 100%;
 	max-height: 1500px;
 	max-width: 2000px;
@@ -102,7 +102,7 @@
 	width: 80%;
 	min-height: 300px;
 	min-width: 1400px;
-	border-radius: 30px;
+	border: 2px solid magenta;
 	padding: 20px;
 	background-color: #00000000;
 	display: flex;
@@ -110,11 +110,12 @@
 	align-items: center;
 	flex-direction: row;
 	overflow: hidden;
+	position: relative;
 }
 
 #prices_image {
 	height: 90%;
-	width: 30%;
+	aspect-ratio: 1 / 1.8;
 	border-radius: 1% 50%;
 	background-color: #00000000;
 	display: flex;
@@ -163,7 +164,7 @@
 
 .prices_item_image {
 	height: 100%;
-	width: 15%;
+	aspect-ratio: 1 / 1;
 	padding: 10px;
 	user-select: none;
 	border-radius: 50%;
@@ -197,7 +198,7 @@
 
 .prices_item_content > .prices_item_header > .prices_item_title {
 	height: 100%;
-	width: 40%;
+	width: 70%;
 	font-family: Infant;
 	color: rgb(255, 255, 255);
 	font-size: 1.2rem;
@@ -210,12 +211,12 @@
 
 .prices_item_content > .prices_item_header > .prices_item_line {
 	height: 2px;
-	width: 35%;
+	width: 15%;
 }
 
 .prices_item_content > .prices_item_header > .prices_item_price {
 	height: 100%;
-	width: 25%;
+	width: 35%;
 	display: flex;
 	justify-content: end;
 }
@@ -257,4 +258,119 @@
 	font-family: Infant;
 	color: rgb(214, 214, 214);
 	font-size: 1.1rem;
+}
+
+@media (max-width: 1024px) {
+	#prices_content {
+		height: 900px;
+		width: 80%;
+		border: 2px solid red;
+		min-height: 300px;
+		min-width: 1000px;
+	}
+
+	#prices_list {
+		height: 100%;
+		width: 70%;
+		border-radius: 30px;
+		padding: 20px;
+		background-color: #00000000;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		overflow: hidden;
+	}
+	.prices_item_image {
+		height: 90%;
+	}
+	.prices_item_content > .prices_item_header > .prices_item_line {
+	}
+	.prices_item_content > .prices_item_header > .prices_item_title {
+		font-size: 1rem;
+		text-align: left;
+	}
+	.prices_item_content > .prices_item_header > .prices_item_price > .span_price1 {
+		font-size: 1.1rem;
+	}
+
+	.prices_item_content > .prices_item_header > .prices_item_price > .span_price2 {
+		font-size: 0.7rem;
+	}
+
+	.prices_item_content > .prices_item_description {
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 425px) {
+	#prices_container {
+		width: 100%;
+		min-height: 1400px;
+	}
+
+	#prices_header {
+		height: 25%;
+		width: 100%;
+	}
+	#prices_subtitle {
+		font-size: 1.8rem;
+	}
+
+	#prices_buttons > .prices_button {
+		font-size: 1.1rem;
+	}
+
+	#prices_content {
+		height: 1400px;
+		width: 100%;
+		flex-direction: column;
+		border: 2px solid red;
+		min-width: 425px;
+		min-height: 1400px;
+	}
+
+	#prices_list {
+		height: 100%;
+		width: 100%;
+		border-radius: 30px;
+		padding: 20px;
+		background-color: #00000000;
+		border: 2px solid red;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		overflow: hidden;
+	}
+	.prices_item {
+		border: 2px solid red;
+		justify-content: start;
+	}
+	.prices_item_image {
+		height: 140%;
+		align-items: center;
+	}
+	.prices_item_content > .prices_item_header > .prices_item_line {
+		display: none;
+	}
+
+	.prices_item_content > .prices_item_header > .prices_item_title {
+		font-size: 0.9rem;
+		text-align: left;
+		border: 2px solid red;
+	}
+	.prices_item_content > .prices_item_header > .prices_item_price > .span_price1 {
+		font-size: 1rem;
+		border: 2px solid red;
+	}
+
+	.prices_item_content > .prices_item_header > .prices_item_price > .span_price2 {
+		font-size: 0.8rem;
+		border: 2px solid red;
+	}
+
+	.prices_item_content > .prices_item_description {
+		font-size: 0.5rem;
+	}
 }
