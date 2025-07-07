@@ -200,7 +200,7 @@
 }
 
 
-.schedule_section > .section_message_container {
+ .section_message_container {
     height: 15%;
     width: 70%;
     display: flex;
@@ -250,4 +250,67 @@
 
 #highlighted_text:hover {
     color: rgb(255, 255, 255) !important;
+}
+
+@media (max-width: 425px) {
+    #schedule_container {
+        min-height: 1300px;
+        max-width: 425px;
+    }
+    
+    .schedule {
+        flex-direction: column;
+    }
+    
+    .schedule_content {
+        height: 65%;
+        width: 100%;
+    }
+
+    .schedule_header {
+    }
+
+    .schedule_title {
+        font-size: 1rem;
+    }
+
+    .schedule_subtitle {
+        font-size: 1.8rem;
+    }
+
+    .schedule_section {
+        position: relative;
+    }
+
+    .schedule_section > .section_quote {
+        width: 90%;
+    }
+    
+    .schedule_section > .section_quote > span {
+        font-size: 0.9rem;
+    }
+
+    .schedule_section > .section_schedule {
+        width: 95%;
+        
+
+    }
+    .section_schedule > .section_schedule_grid {
+        gap: 0px;
+        padding: 20px;
+    }
+    .section_schedule > .section_schedule_grid > div {
+        font-size: 1rem;
+    }
+
+    .schedule_section > .section_message_container {
+        width: 75%;
+    }
+
+    .schedule_image_container {
+        height: 30%;
+        width: 80%;
+
+    }
+
 }
