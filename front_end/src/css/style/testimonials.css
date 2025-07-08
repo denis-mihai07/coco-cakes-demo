@@ -145,27 +145,17 @@
 
 @media (max-width: 425px) {
     #testimonials_container {
-        /* border: 2px solid red; */
         height: 400px;
     }
-    .testimonials {
-        /* border: 2px solid rgb(0, 255, 42); */
-    }
-
-
 
     .testimonials_header {
         height: 40%;
         width: 90%;
-        /* border: 2px solid red; */
     }
 
     .splide {
         height: 50%;
         width: 90%;
-        /* border: 2px solid red; */
-    }
-    .splide__slide {
     }
 
     .splide__text {
@@ -178,6 +168,9 @@
 
     .testimonials_footer {
         height: 10%;
-        /* border: 2px solid red; */
+    }
+    .splide__arrow svg {
+        min-width: 1rem;
+        min-height: 1rem;
     }
 } 
