@@ -37,6 +37,7 @@
 .schedule_image_container {
     height: 750px;
     width: 525px;
+    min-width: 450px;
     position: relative;
     display: flex;
     justify-content: end;

@@ -18,6 +18,11 @@
 	align-items: center;
 	flex-direction: column;
 	position: relative;
+	/* z-index: -1; */
+}
+
+#particles {
+	z-index: 1;
 }
 
 .hero > h1 {
@@ -39,6 +44,7 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	z-index: 2;
 }
 
 .learn_more_text {

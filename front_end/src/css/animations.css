@@ -61,7 +61,7 @@
 	100% {
 		text-shadow: 0 -1px #d26464, 0 -2px #d26464, 0 -3px #d26464, 0 -4px #d26464, 0 -5px #d26464, 0 -6px #d26464,
 			0 -7px #d26464, 0 -8px #d26464;
-		transform: translateY(8px);
+		transform: translateY(0px);
 	}
 }
 
@@ -69,7 +69,7 @@
 	0% {
 		text-shadow: 0 -1px #d26464, 0 -2px #d26464, 0 -3px #d26464, 0 -4px #d26464, 0 -5px #d26464, 0 -6px #d26464,
 			0 -7px #d26464, 0 -8px #d26464;
-		transform: translateY(8px);
+		transform: translateY(0px);
 	}
 	100% {
 		text-shadow: 0 0 #d26464, 0 0 #d26464, 0 0 #d26464, 0 0 #d26464, 0 0 #d26464, 0 0 #d26464, 0 0 #d26464,
@@ -87,13 +87,13 @@
 	animation-timing-function: ease;
 }
 
-/* .contact_button:hover {
+.contact_button:hover {
   animation-name: shadow-drop-center;
 }
 
 .contact_button:not(:hover) {
   animation-name: shadow-drop-center-reverse;
-} */
+}
 
 @keyframes shadow-drop-center {
 	0% {

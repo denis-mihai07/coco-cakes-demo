@@ -4,18 +4,8 @@
 }
 
 @font-face {
-	font-family: Hoss;
-	src: url(../../public/fonts/SourGummy-VariableFont_wdth\wght.ttf);
-}
-
-@font-face {
 	font-family: Infant;
 	src: url(../../public/fonts/CormorantInfant-VariableFont_wght.ttf);
-}
-
-@font-face {
-	font-family: Cutive;
-	src: url(../../public/fonts/SourGummy-VariableFont_wdth\wght.ttf);
 }
 
 @font-face {

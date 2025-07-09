@@ -10,13 +10,13 @@ form.addEventListener('submit', (e) => {
 	const mes = document.getElementById('contact_message_text').value.trim();
 
 	if (!first_name || !last_name || !email || !phone || !mes) {
-		showMessage('Te rugam sa completezi toate campurile.', false);
+		showMessage('Toate câmpurile sunt obligatorii.', false);
 	} else if (!isValidEmail(email)) {
-		showMessage('Introdu un email corect', false);
+		showMessage('Adresa de email introdusă nu este validă.', false);
 	} else if (mes.length < 15) {
-		showMessage('Mesajul este prea scurt', false);
+		showMessage('Mesajul introdus este prea scurt.', false);
 	} else {
-		showMessage('Mesajul Tau a fost trimit cu succes.', true);
+		showMessage('Mesajul introdus a fost trimit cu succes.', true);
 		const data = {
 			first_name,
 			last_name,
