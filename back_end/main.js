@@ -3,13 +3,13 @@ const nodemailer = require('nodemailer');
 const transporter = nodemailer.createTransport({
 	service: 'gmail',
 	auth: {
-		user: 'birtalanmihaidenis@gmail.com',
-		pass: 'hwzg qkbr tvms gtvl',
+		user: 'contact.cococakes@gmail.com',
+		pass: 'otuj hstj eway xquo',
 	},
 });
 
 const mailOptions = {
-	from: 'birtalanmihaidenis@gmail.com',
+	from: 'contact.cococakes@gmail.com',
 	to: 'birtalanmihaidenis@gmail.com',
 	subject: 'Contact Message from Coco Cakes Website',
 	text: 'urasc negrii trebuie iubiti',
