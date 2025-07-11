@@ -1,422 +1,560 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Coco Cake's & Gustul din Copilărie » Râmnicu Valcea</title>
+    <link
+      rel="icon"
+      href="./front_end/public/images/cake_icon.png"
+      type="image/png"
+    />
 
-  <title>Coco Cake's & Gustul din Copilărie » Râmnicu Valcea</title>
-  <link rel="icon" href="./front_end/public/images/cake_icon.png" type="image/png" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- Phosphor Icons Regular -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
 
-  <!-- Phosphor Icons Regular -->
-  <link rel="stylesheet" type="text/css"
-    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <!-- Phosphor Icons Light -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/light/style.css"
+    />
 
-  <!-- Phosphor Icons Light -->
-  <link rel="stylesheet" type="text/css"
-    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/light/style.css" />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
 
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" type="text/css"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- Splide CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+    />
 
+    <link rel="stylesheet" href="./front_end/src/css/base.css" />
+    <link rel="stylesheet" href="./front_end/src/css/animations.css" />
 
+    <link rel="stylesheet" href="./front_end/src/css/style/background.css" />
+    <link rel="stylesheet" href="./front_end/src/css/style/banner.css" />
+    <link
+      rel="stylesheet"
+      href="./front_end/src/css/style/contact_header.css"
+    />
+    <link rel="stylesheet" href="./front_end/src/css/style/contact_hero.css" />
+    <link rel="stylesheet" href="./front_end/src/css/style/page_banner.css" />
+    <link rel="stylesheet" href="./front_end/src/css/style/panel.css" />
+    <link rel="stylesheet" href="./front_end/src/css/style/about.css" />
+    <link rel="stylesheet" href="./front_end/src/css/style/products.css" />
+    <link rel="stylesheet" href="./front_end/src/css/style/prices.css" />
+    <link rel="stylesheet" href="./front_end/src/css/style/schedule.css" />
 
-  <!-- Splide CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css" />
+    <link rel="stylesheet" href="./front_end/src/css/style/testimonials.css" />
 
-  <link rel="stylesheet" href="./front_end/src/css/base.css" />
-  <link rel="stylesheet" href="./front_end/src/css/animations.css" />
+    <link rel="stylesheet" href="./front_end/src/css/style/contact.css" />
+    <link rel="stylesheet" href="./front_end/src/css/style/footer.css" />
+  </head>
 
-  <link rel="stylesheet" href="./front_end/src/css/style/background.css" />
-  <link rel="stylesheet" href="./front_end/src/css/style/banner.css" />
-  <link rel="stylesheet" href="./front_end/src/css/style/contact_header.css" />
-  <link rel="stylesheet" href="./front_end/src/css/style/contact_hero.css" />
-  <link rel="stylesheet" href="./front_end/src/css/style/page_banner.css" />
-  <link rel="stylesheet" href="./front_end/src/css/style/panel.css" />
-  <link rel="stylesheet" href="./front_end/src/css/style/about.css" />
-  <link rel="stylesheet" href="./front_end/src/css/style/products.css" />
-  <link rel="stylesheet" href="./front_end/src/css/style/prices.css" />
-  <link rel="stylesheet" href="./front_end/src/css/style/schedule.css" />
+  <body>
+    <div id="particles"></div>
 
-  <link rel="stylesheet" href="./front_end/src/css/style/testimonials.css" />
+    <div class="background">
+      <div class="background_image"></div>
+    </div>
 
-
-  <link rel="stylesheet" href="./front_end/src/css/style/contact.css" />
-  <link rel="stylesheet" href="./front_end/src/css/style/footer.css" />
-
-
-
-  
-</head>
-
-<body>
-  <div id="particles"></div>
-
-  <div class="background">
-    <div class="background_image"></div>
-  </div>
-
-  <div id="overlay"></div>
-  <div id="menu_panel">
-    <button id="close_button">
-      <div class="close_button_line" id="line1"></div>
-      <div class="close_button_line" id="line2"></div>
-    </button>
-    <article id="panel_content">
-      <!-- CONTENT /: TO BE MODIFIED-->
-      <div class="panel_title">BINE AI VENIT LA COCO CAKES</div>
-      <div class="panel_subtitle">
-        Cofetăria ta în Râmnicu Vâlcea. Bucură-te de prăjituri și torturi de casă pregătite cu ingrediente proaspete.
-      </div>
-      <div class="panel_icon"><i class="ph ph-info"></i></div>
-      <div class="panel_phone" id="panel_phone_clipboard">
-        +40 774 429 131
-      </div>
-      <div class="panel_location">Str. Râureni Nr. 181, Râmnicu Vâlcea</div>
-      <div class="panel_email">corinadragusin1985@gmail.com</div>
-      <div class="panel_icon"><i class="ph ph-alarm"></i></div>
-      <div class="panel_schedule">
-        Luni - Vineri: 6.00 - 14.00 <br />
-        Sâmbată: 8.00 - 16.00 <br />
-        Duminică: 10.00 - 18.00
-      </div>
-      <div class="panel_socials">
-        <a href="https://www.instagram.com/cococakesro/" target="_blank">
-          <span><i class="fa-brands fa-instagram"></i></span>
-        </a>
-        <div>│</div>
-        <a href="https://www.facebook.com/share/19SkuwfF8e/?mibextid=wwXIfr" target="_blank">
-          <span><i class="fa-brands fa-facebook-f"></i></span>
-        </a>
-        <div>│</div>
-        <a href="https://wa.me/40774429131" target="_blank">
-          <span><i class="fa-brands fa-whatsapp"></i></span>
-        </a>
-      </div>
-    </article>
-  </div>
-
-
-  <div class="banner">
-    <div class="banner_container">
-      <div id="info">
-        <div id="email">
-          <span><i class="ph ph-envelope-simple"></i></span>
-          <span class="info_text">corinadragusin1985@gmail.com</span>
+    <div id="overlay"></div>
+    <div id="menu_panel">
+      <button id="close_button">
+        <div class="close_button_line" id="line1"></div>
+        <div class="close_button_line" id="line2"></div>
+      </button>
+      <article id="panel_content">
+        <!-- CONTENT /: TO BE MODIFIED-->
+        <div class="panel_title">BINE AI VENIT LA COCO CAKES</div>
+        <div class="panel_subtitle">
+          Cofetăria ta în Râmnicu Vâlcea. Bucură-te de prăjituri și torturi de
+          casă pregătite cu ingrediente proaspete.
         </div>
-        <div id="location">
-          <span><i class="ph ph-map-pin"></i></span>
-          <span class="info_text">Str. Râureni Nr. 181</span>
+        <div class="panel_icon"><i class="ph ph-info"></i></div>
+        <div class="panel_phone" id="panel_phone_clipboard">
+          +40 774 429 131
         </div>
-        <div id="phone">
-          <span><i class="ph ph-phone"></i></span>
-          <span class="info_text">0774.429.131</span>
+        <div class="panel_location">Str. Râureni Nr. 181, Râmnicu Vâlcea</div>
+        <div class="panel_email">corinadragusin1985@gmail.com</div>
+        <div class="panel_icon"><i class="ph ph-alarm"></i></div>
+        <div class="panel_schedule">
+          Luni - Vineri: 6.00 - 14.00 <br />
+          Sâmbată: 8.00 - 16.00 <br />
+          Duminică: 10.00 - 18.00
         </div>
-      </div>
-      <div id="socials">
-        <a id="instagram" href="https://www.instagram.com/cococakesro/" target="_blank">
-          <span><i class="fa-brands fa-instagram"></i></span>
-        </a>
-        <a id="facebook" href="https://www.facebook.com/share/19SkuwfF8e/?mibextid=wwXIfr" target="_blank">
-          <span><i class="fa-brands fa-facebook-f"></i></span>
-        </a>
-        <a id="whatsapp" href="https://wa.me/40774429131" target="_blank">
-          <span><i class="fa-brands fa-whatsapp"></i></span>
-        </a>
+        <div class="panel_socials">
+          <a href="https://www.instagram.com/cococakesro/" target="_blank">
+            <span><i class="fa-brands fa-instagram"></i></span>
+          </a>
+          <div>│</div>
+          <a
+            href="https://www.facebook.com/share/19SkuwfF8e/?mibextid=wwXIfr"
+            target="_blank"
+          >
+            <span><i class="fa-brands fa-facebook-f"></i></span>
+          </a>
+          <div>│</div>
+          <a href="https://wa.me/40774429131" target="_blank">
+            <span><i class="fa-brands fa-whatsapp"></i></span>
+          </a>
+        </div>
+      </article>
+    </div>
+
+    <div class="banner">
+      <div class="banner_container">
+        <div id="info">
+          <div id="email">
+            <span><i class="ph ph-envelope-simple"></i></span>
+            <span class="info_text">corinadragusin1985@gmail.com</span>
+          </div>
+          <div id="location">
+            <span><i class="ph ph-map-pin"></i></span>
+            <span class="info_text">Str. Râureni Nr. 181</span>
+          </div>
+          <div id="phone">
+            <span><i class="ph ph-phone"></i></span>
+            <span class="info_text">0774.429.131</span>
+          </div>
+        </div>
+        <div id="socials">
+          <a
+            id="instagram"
+            href="https://www.instagram.com/cococakesro/"
+            target="_blank"
+          >
+            <span><i class="fa-brands fa-instagram"></i></span>
+          </a>
+          <a
+            id="facebook"
+            href="https://www.facebook.com/share/19SkuwfF8e/?mibextid=wwXIfr"
+            target="_blank"
+          >
+            <span><i class="fa-brands fa-facebook-f"></i></span>
+          </a>
+          <a id="whatsapp" href="https://wa.me/40774429131" target="_blank">
+            <span><i class="fa-brands fa-whatsapp"></i></span>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
 
-  <header id="header_container">
-    <header class="header">
-      <div class="logo">
-        <a href="index.html" class="text-shadow-pop-top">Coco Cakes</a>
-      </div>
-      <nav class="navigation">
-        <ul>
-          <li><a id="home" href="./index.html">Acasă</a></li>
-          <li><a href="./index.html#page_banner2">Despre noi</a></li>
-          <li><a href="./index.html#products_container">Produse</a></li>
-          <li><a href="./index.html#prices_container">Prețuri</a></li>
-          <li><a href="./index.html#schedule_container">Program</a></li>
-        </ul>
-      </nav>
-      <a class="contact_button">Contactează-ne</a>
-      <button id="menu">
-        <div class="menu_line"></div>
-        <div class="menu_line"></div>
-        <div class="menu_line"></div>
-      </button>
-      <button class="menu" id="hamburger_button">
-        <div class="menu_line"></div>
-        <div class="menu_line"></div>
-        <div class="menu_line"></div>
-      </button>
+    <header id="header_container">
+      <header class="header">
+        <div class="logo">
+          <a href="index.html" class="text-shadow-pop-top">Coco Cakes</a>
+        </div>
+        <nav class="navigation">
+          <ul>
+            <li><a id="home" href="./index.html">Acasă</a></li>
+            <li><a href="./index.html#page_banner2">Despre noi</a></li>
+            <li><a href="./index.html#products_container">Produse</a></li>
+            <li><a href="./index.html#prices_container">Prețuri</a></li>
+            <li><a href="./index.html#schedule_container">Program</a></li>
+          </ul>
+        </nav>
+        <a class="contact_button">Contactează-ne</a>
+        <button id="menu">
+          <div class="menu_line"></div>
+          <div class="menu_line"></div>
+          <div class="menu_line"></div>
+        </button>
+        <button class="menu" id="hamburger_button">
+          <div class="menu_line"></div>
+          <div class="menu_line"></div>
+          <div class="menu_line"></div>
+        </button>
+      </header>
     </header>
-  </header>
 
-  <main>
-    <section id="hero_container">
-      <section class="hero">
-        <h1 id="hero_motto">
-          <a id="home_button" href="./index.html">Acasă</a> / Contact
-        </h1>
+    <main>
+      <section id="hero_container">
+        <section class="hero">
+          <h1 id="hero_motto">
+            <a id="home_button" href="./index.html">Acasă</a> / Contact
+          </h1>
+        </section>
       </section>
-    </section>
 
-    <section class="page_banner" id="page_banner">
-      <div class="marquee">
-        <div class="marquee_content">
-          <span>Coco Cakes & Gustul din Copilărie<i class="fa-solid fa-caret-left"></i></span>
-          <span>Coco Cakes & Gustul din Copilărie<i class="fa-solid fa-caret-left"></i></span>
-          <span>Coco Cakes & Gustul din Copilărie<i class="fa-solid fa-caret-left"></i></span>
-          <span>Coco Cakes & Gustul din Copilărie<i class="fa-solid fa-caret-left"></i></span>
-          <span>Coco Cakes & Gustul din Copilărie<i class="fa-solid fa-caret-left"></i></span>
-          <span>Coco Cakes & Gustul din Copilărie<i class="fa-solid fa-caret-left"></i></span>
-          <span>Coco Cakes & Gustul din Copilărie<i class="fa-solid fa-caret-left"></i></span>
-          <span>Coco Cakes & Gustul din Copilărie<i class="fa-solid fa-caret-left"></i></span>
+      <section class="page_banner" id="page_banner">
+        <div class="marquee">
+          <div class="marquee_content">
+            <span
+              >Coco Cakes & Gustul din Copilărie<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+            <span
+              >Coco Cakes & Gustul din Copilărie<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+            <span
+              >Coco Cakes & Gustul din Copilărie<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+            <span
+              >Coco Cakes & Gustul din Copilărie<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+            <span
+              >Coco Cakes & Gustul din Copilărie<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+            <span
+              >Coco Cakes & Gustul din Copilărie<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+            <span
+              >Coco Cakes & Gustul din Copilărie<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+            <span
+              >Coco Cakes & Gustul din Copilărie<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+          </div>
+          <div class="marquee_content">
+            <span
+              >Coco Cakes & Gustul din Copilărie<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+            <span
+              >Coco Cakes & Gustul din Copilărie<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+            <span
+              >Coco Cakes & Gustul din Copilărie<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+            <span
+              >Coco Cakes & Gustul din Copilărie<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+            <span
+              >Coco Cakes & Gustul din Copilărie<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+            <span
+              >Coco Cakes & Gustul din Copilărie<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+            <span
+              >Coco Cakes & Gustul din Copilărie<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+            <span
+              >Coco Cakes & Gustul din Copilărie<i
+                class="fa-solid fa-caret-left"
+              ></i
+            ></span>
+          </div>
         </div>
-        <div class="marquee_content">
-          <span>Coco Cakes & Gustul din Copilărie<i class="fa-solid fa-caret-left"></i></span>
-          <span>Coco Cakes & Gustul din Copilărie<i class="fa-solid fa-caret-left"></i></span>
-          <span>Coco Cakes & Gustul din Copilărie<i class="fa-solid fa-caret-left"></i></span>
-          <span>Coco Cakes & Gustul din Copilărie<i class="fa-solid fa-caret-left"></i></span>
-          <span>Coco Cakes & Gustul din Copilărie<i class="fa-solid fa-caret-left"></i></span>
-          <span>Coco Cakes & Gustul din Copilărie<i class="fa-solid fa-caret-left"></i></span>
-          <span>Coco Cakes & Gustul din Copilărie<i class="fa-solid fa-caret-left"></i></span>
-          <span>Coco Cakes & Gustul din Copilărie<i class="fa-solid fa-caret-left"></i></span>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="contact_container" style="z-index: 10334340;">
-      <section class="contact">
-        <div class="contact_content">
-          <div class="contact_infos">
-            <div class="contact_header">
-              <div class="schedule_title">
-                <i class="ph ph-envelope-simple-open"></i>
-                <span>
-                  Contactează-ne
-                </span>
+      <section id="contact_container" style="z-index: 10334340">
+        <section class="contact">
+          <div class="contact_content">
+            <div class="contact_infos">
+              <div class="contact_header">
+                <div class="schedule_title">
+                  <i class="ph ph-envelope-simple-open"></i>
+                  <span> Contactează-ne </span>
+                </div>
+                <div class="schedule_subtitle">
+                  <span> Hai să păstrăm legătura </span>
+                </div>
+                <div class="contact_description">
+                  <span>
+                    Ai o întrebare sau o propunere? Suntem aici pentru tine.
+                    Completează formularul și revenim cât mai curând.
+                  </span>
+                </div>
               </div>
-              <div class="schedule_subtitle">
-                <span>
-                  Hai să păstrăm legătura
-                </span>
-              </div>
-              <div class="contact_description">
-                <span>
-                  Ai o întrebare sau o propunere? Suntem aici pentru tine. Completează formularul și revenim cât mai
-                  curând.
-                </span>
-              </div>
-            </div>
-            <div class="contact_info">
-              <div class="info1">
-                <a class="info_container" href="tel:+40774429131">
-                  <div class="icon_container">
-                    <div class="icon_circle">
-                      <i class="ph ph-phone"></i>
-                    </div>
-                  </div>
-                  <div class="info_title">
-                    <span>Telefon</span>
-                  </div>
-                  <div class="info_subtitle">
-                    <span>+40&nbsp;774&nbsp;429&nbsp;131</span>
-                  </div>
-                </a>
-
-                <a class="info_container" href="mailto:corinadragusin1985@gmail.com">
-                  <div class="icon_container">
-                    <div class="icon_circle">
-                      <i class="ph ph-paper-plane-tilt"></i>
-                    </div>
-                  </div>
-                  <div class="info_title">
-                    <span>E-Mail</span>
-                  </div>
-                  <div class="info_subtitle">
-                    <span>corinadragusin1985@gmail.com</span>
-                  </div>
-                </a>
-              </div>
-              <div class="info2">
-                <a class="info_container2" href="https://maps.app.goo.gl/ghTFo2SNtnbSJTiQ7" target="_blank">
-                  <div class="info_center_container">
-                    <div class="icon_container2">
+              <div class="contact_info">
+                <div class="info1">
+                  <a class="info_container" href="tel:+40774429131">
+                    <div class="icon_container">
                       <div class="icon_circle">
-                        <i class="ph ph-map-pin"></i>
+                        <i class="ph ph-phone"></i>
                       </div>
                     </div>
-                    <div class="text_container">
-                      <div class="info_title2">
-                        <span>Locație</span>
-                      </div>
-                      <div class="info_subtitle2">
-                        <span>Strada Râureni Nr. 181, Râmnicu Vâlcea, România</span>
+                    <div class="info_title">
+                      <span>Telefon</span>
+                    </div>
+                    <div class="info_subtitle">
+                      <span>+40&nbsp;774&nbsp;429&nbsp;131</span>
+                    </div>
+                  </a>
+
+                  <a
+                    class="info_container"
+                    href="mailto:corinadragusin1985@gmail.com"
+                  >
+                    <div class="icon_container">
+                      <div class="icon_circle">
+                        <i class="ph ph-paper-plane-tilt"></i>
                       </div>
                     </div>
-                  </div>
-                </a>
+                    <div class="info_title">
+                      <span>E-Mail</span>
+                    </div>
+                    <div class="info_subtitle">
+                      <span>corinadragusin1985@gmail.com</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="info2">
+                  <a
+                    class="info_container2"
+                    href="https://maps.app.goo.gl/ghTFo2SNtnbSJTiQ7"
+                    target="_blank"
+                  >
+                    <div class="info_center_container">
+                      <div class="icon_container2">
+                        <div class="icon_circle">
+                          <i class="ph ph-map-pin"></i>
+                        </div>
+                      </div>
+                      <div class="text_container">
+                        <div class="info_title2">
+                          <span>Locație</span>
+                        </div>
+                        <div class="info_subtitle2">
+                          <span
+                            >Strada Râureni Nr. 181, Râmnicu Vâlcea,
+                            România</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="testimonials_footer">
+                <div class="question_text">Ai întrebări?</div>
+                <div id="highlighted_text">
+                  <a href="https://wa.me/40774429131" target="_blank">
+                    Lasă-ne un mesaj!
+                  </a>
+                </div>
               </div>
             </div>
-            <div class="testimonials_footer">
-              <div class="question_text">Ai întrebări?</div>
-              <div id="highlighted_text">
-                <a href="https://wa.me/40774429131" target="_blank">
-                  Lasă-ne un mesaj!
-                </a>
+            <div class="contact_form_container">
+              <div class="contact_form_header">
+                <div class="form_title">
+                  <span>Trimite un mesaj</span>
+                </div>
+                <div class="form_subtitle">
+                  <span>
+                    Suntem aici să te ajutăm — scrie-ne pentru orice întrebare,
+                    colaborare sau solicitare și îți răspundem în cel mai scurt
+                    timp.
+                  </span>
+                </div>
+              </div>
+              <form id="contact_form">
+                <div class="contact_input_container">
+                  <input
+                    type="text"
+                    name="First Name"
+                    id="first_name"
+                    class="contact_input"
+                    placeholder=" "
+                  />
+                  <label for="name">Numele Tău</label>
+                </div>
+                <div class="contact_input_container">
+                  <input
+                    type="text"
+                    name="Last Name"
+                    id="last_name"
+                    class="contact_input"
+                    placeholder=" "
+                  />
+                  <label for="surname">Prenumele Tău</label>
+                </div>
+                <div class="contact_input_container">
+                  <input
+                    type="text"
+                    name="email"
+                    id="contact_email"
+                    class="contact_input"
+                    placeholder=" "
+                  />
+                  <label for="email">Adresă de E-Mail</label>
+                </div>
+                <div class="contact_input_container">
+                  <input
+                    type="text"
+                    name="phone"
+                    id="contact_phone"
+                    class="contact_input"
+                    placeholder=" "
+                  />
+                  <label for="phone">Număr de Telefon</label>
+                </div>
+                <div class="contact_input_container" id="contact_message">
+                  <textarea
+                    name="message"
+                    id="contact_message_text"
+                    class="contact_input"
+                    placeholder=" "
+                  ></textarea>
+                  <label for="message">Mesajul Tău</label>
+                </div>
+                <div class="form_button_container">
+                  <button type="submit" id="contact_button">
+                    Trimite Mesajul
+                  </button>
+                </div>
+              </form>
+              <div class="contact_error_container">
+                <div id="error_message"></div>
               </div>
             </div>
           </div>
-          <div class="contact_form_container">
-            <div class="contact_form_header">
-              <div class="form_title">
-                <span>Trimite un mesaj</span>
-              </div>
-              <div class="form_subtitle">
-                <span>
-                  Suntem aici să te ajutăm — scrie-ne pentru orice întrebare, colaborare sau solicitare și îți răspundem
-                  în cel mai scurt timp.
-                </span>
-              </div>
-            </div>
-            <form id="contact_form">
-              <div class="contact_input_container">
-                <input type="text" name="First Name" id="first_name" class="contact_input" placeholder=" ">
-                <label for="name">Numele Tău</label>
-              </div>
-              <div class="contact_input_container">
-                <input type="text" name="Last Name" id="last_name" class="contact_input" placeholder=" ">
-                <label for="surname">Prenumele Tău</label>
 
-              </div>
-              <div class="contact_input_container">
-                <input type="text" name="email" id="contact_email" class="contact_input" placeholder=" ">
-                <label for="email">Adresă de E-Mail</label>
-
-              </div>
-              <div class="contact_input_container">
-                <input type="text" name="phone" id="contact_phone" class="contact_input" placeholder=" ">
-                <label for="phone">Număr de Telefon</label>
-
-
-              </div>
-              <div class="contact_input_container" id="contact_message">
-                <textarea name="message" id="contact_message_text" class="contact_input" placeholder=" "></textarea>
-                <label for="message">Mesajul Tău</label>
-
-              </div>
-              <div class="form_button_container">
-                <button type="submit" id="contact_button">Trimite Mesajul</button>
-              </div>
-
-            </form>
-            <div class="contact_error_container">
-              <div id="error_message">
-
-              </div>
-            </div>
+          <div class="contact_location">
+            <div id="map"></div>
           </div>
-        </div>
-
-        <div class="contact_location">
-          <div id="map"></div>
-        </div>
+        </section>
       </section>
-    </section>
+    </main>
 
-  </main>
-
-  <footer id="footer_container">
-    <footer class="footer">
-      <div class="footer_content">
-        <div class="footer_info">
-          <div class="footer_icon">
-            <i class="ph ph-phone"></i>
-          </div>
-          <div class="footer_title">
-            <span>Contactează-ne</span>
-          </div>
-          <div class="footer_subtitle">
-            <span>+40&nbsp;774&nbsp;429&nbsp;131</span>
-            <span>corinadragusin1985@gmail.com</span>
-          </div>
-          <a class="contact_button" href="./contact.html">Contactează-ne</a>
-        </div>
-        <div class="footer_info" id="footer_adress">
-          <div class="footer_icon">
-            <i class="ph ph-map-pin"></i>
-          </div>
-          <div class="footer_title">
-            <span>Adresă</span>
-          </div>
-          <div class="footer_subtitle">
-            <span>Strada Râureni Nr. 181,<br> Râmnicu Vâlcea, România</span>
-          </div>
-          <a class="contact_button" target="_blank" href="https://www.google.com/maps/place/Strada+R%C3%A2ureni+181,+R%C3%A2mnicu+V%C3%A2lcea/@45.0526898,24.3216092,840m/data=!3m2!1e3!4b1!4m6!3m5!1s0x474d46c45974739d:0xa74ebdbdbee6570e!8m2!3d45.052686!4d24.3241841!16s%2Fg%2F11c5j7j7t9?entry=ttu&g_ep=EgoyMDI1MDcwNy4wIKXMDSoASAFQAw%3D%3D">Vizitează-ne</a>
-        </div>
-        <div class="footer_info">
-          <div class="footer_icon">
-            <i class="ph ph-alarm"></i>
-          </div>
-          <div class="footer_title">
-            <span>Program</span>
-          </div>
-          <div class="footer_subtitle">
-            <span>
-              L - V : 6.00 - 14.00 <br>
-              S: 8.00 - 16.00 <br>
-              D: 10.00 - 18.00
-            </span>
-          </div>
-          <a class="contact_button" target="_blank" href="https://www.facebook.com/share/19SkuwfF8e/?mibextid=wwXIfr">Află mai multe</a>
-        </div>
-        <div class="footer_footer">
-          <div class="copyright">
-            <span>Copyright &#169; 2025 All Rights Reserved.</span>
-          </div>
-          <div class="footer_logo">
-            <div class="footer_circle">
-              <i class="bi bi-cake2"></i>
+    <footer id="footer_container">
+      <footer class="footer">
+        <div class="footer_content">
+          <div class="footer_info">
+            <div class="footer_icon">
+              <i class="ph ph-phone"></i>
             </div>
-            <div class="footer_logo_name">
-              Coco Cake's
+            <div class="footer_title">
+              <span>Contactează-ne</span>
+            </div>
+            <div class="footer_subtitle">
+              <span>+40&nbsp;774&nbsp;429&nbsp;131</span>
+              <span>corinadragusin1985@gmail.com</span>
+            </div>
+            <a class="contact_button" href="./contact.html">Contactează-ne</a>
+          </div>
+          <div class="footer_info" id="footer_adress">
+            <div class="footer_icon">
+              <i class="ph ph-map-pin"></i>
+            </div>
+            <div class="footer_title">
+              <span>Adresă</span>
+            </div>
+            <div class="footer_subtitle">
+              <span
+                >Strada Râureni Nr. 181,<br />
+                Râmnicu Vâlcea, România</span
+              >
+            </div>
+            <a
+              class="contact_button"
+              target="_blank"
+              href="https://www.google.com/maps/place/Strada+R%C3%A2ureni+181,+R%C3%A2mnicu+V%C3%A2lcea/@45.0526898,24.3216092,840m/data=!3m2!1e3!4b1!4m6!3m5!1s0x474d46c45974739d:0xa74ebdbdbee6570e!8m2!3d45.052686!4d24.3241841!16s%2Fg%2F11c5j7j7t9?entry=ttu&g_ep=EgoyMDI1MDcwNy4wIKXMDSoASAFQAw%3D%3D"
+              >Vizitează-ne</a
+            >
+          </div>
+          <div class="footer_info">
+            <div class="footer_icon">
+              <i class="ph ph-alarm"></i>
+            </div>
+            <div class="footer_title">
+              <span>Program</span>
+            </div>
+            <div class="footer_subtitle">
+              <span>
+                L - V : 6.00 - 14.00 <br />
+                S: 8.00 - 16.00 <br />
+                D: 10.00 - 18.00
+              </span>
+            </div>
+            <a
+              class="contact_button"
+              target="_blank"
+              href="https://www.facebook.com/share/19SkuwfF8e/?mibextid=wwXIfr"
+              >Află mai multe</a
+            >
+          </div>
+          <div class="footer_footer">
+            <div class="copyright">
+              <span>Copyright &#169; 2025 All Rights Reserved.</span>
+            </div>
+            <div class="footer_logo">
+              <div class="footer_circle">
+                <i class="bi bi-cake2"></i>
+              </div>
+              <div class="footer_logo_name">Coco Cake's</div>
+            </div>
+            <div class="footer_socials">
+              <a href="https://www.instagram.com/cococakesro/" target="_blank">
+                <span><i class="fa-brands fa-instagram"></i></span>
+              </a>
+              <a
+                href="https://www.facebook.com/share/19SkuwfF8e/?mibextid=wwXIfr"
+                target="_blank"
+              >
+                <span><i class="fa-brands fa-facebook-f"></i></span>
+              </a>
+              <a href="https://wa.me/40774429131" target="_blank">
+                <span><i class="fa-brands fa-whatsapp"></i></span>
+              </a>
             </div>
           </div>
-          <div class="footer_socials">
-            <a href="https://www.instagram.com/cococakesro/" target="_blank">
-              <span><i class="fa-brands fa-instagram"></i></span>
-            </a>
-            <a href="https://www.facebook.com/share/19SkuwfF8e/?mibextid=wwXIfr" target="_blank">
-              <span><i class="fa-brands fa-facebook-f"></i></span>
-            </a>
-            <a href="https://wa.me/40774429131" target="_blank">
-              <span><i class="fa-brands fa-whatsapp"></i></span>
-            </a>
-          </div>
         </div>
-      </div>
+      </footer>
     </footer>
-  </footer>
 
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Particles.js -->
 
-  <script src="./front_end/src/js/particles.js"></script>
-  <script src="./front_end/src/js/panel.js"></script>
-  <script src="./front_end/src/js/slider.js"></script>
-  <script src="./front_end/src/js/contact_scroll.js"></script>
-  <script src="./front_end/src/js/map.js"></script>
-  <script src="./front_end/src/js/contact.js"></script>
-  <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3sEWrhdqdE7zM1We9DC_X0E66satDrp4&callback=initMap"></script>
-</body>
-
+    <script src="./front_end/src/js/particles.js"></script>
+    <script src="./front_end/src/js/url_script.js"></script>
+    <script src="./front_end/src/js/panel.js"></script>
+    <script src="./front_end/src/js/slider.js"></script>
+    <script src="./front_end/src/js/contact_scroll.js"></script>
+    <script src="./front_end/src/js/map.js"></script>
+    <script src="./front_end/src/js/contact.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3sEWrhdqdE7zM1We9DC_X0E66satDrp4&callback=initMap"
+    ></script>
+  </body>
 </html>
