@@ -22,7 +22,7 @@ form.addEventListener("submit", async (e) => {
     console.log("Email:", email);
     console.log("Mesaj:", mes);
 
-    const res = await fetch("http://localhost:3000/send-email", {
+    const res = await fetch("http://192.168.1.129:3000/send-email", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
