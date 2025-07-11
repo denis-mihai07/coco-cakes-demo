@@ -1,4 +1,6 @@
 ```
+└──prettierrc.json
+└── resources
 └── 📁back_end
 └── 📁front_end
     └── 📁public
