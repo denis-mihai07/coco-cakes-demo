@@ -4,7 +4,12 @@ const sendEmail = require("./main");
 const app = express();
 const PORT = 3000;
 
-app.use(cors());
+const corsOptions = {
+  origin: "https://denis-mihai07.github.io",
+  optionsSuccessStatus: 200,
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 
 app.post("/send-email", (req, res) => {
