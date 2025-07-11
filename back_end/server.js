@@ -5,7 +5,7 @@ const app = express();
 const PORT = 3000;
 
 const corsOptions = {
-  origin: "https://denis-mihai07.github.io",
+  origin: "https://coco-cakes.ro",
   optionsSuccessStatus: 200,
 };
 
