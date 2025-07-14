@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     link.addEventListener("click", (e) => {
       e.preventDefault();
 
-      const targetId = this.getAttribute("href").substring(1);
+      const targetId = link.getAttribute("href").substring(1);
       const targetElement = document.getElementById(targetId);
       smoothScrollTo(targetElement);
 
