@@ -291,8 +291,6 @@
   .prices_item_image {
     height: 90%;
   }
-  .prices_item_content > .prices_item_header > .prices_item_line {
-  }
   .prices_item_content > .prices_item_header > .prices_item_title {
     font-size: 1rem;
     text-align: left;
