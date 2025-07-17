@@ -16,12 +16,7 @@ form.addEventListener("submit", async (e) => {
   } else if (mes.length < 15) {
     showMessage("Mesajul introdus este prea scurt.", false);
   } else {
-    showMessage("Mesajul introdus a fost trimit cu succes.", true);
-
-    console.log("Nume:", first_name);
-    console.log("Email:", email);
-    console.log("Mesaj:", mes);
-
+    // showMessage("Mesajul introdus a fost trimis cu succes.", true);
     const res = await fetch("https://api.coco-cakes.ro/send-email", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -32,6 +27,14 @@ form.addEventListener("submit", async (e) => {
         phoneNumber: phone,
       }),
     });
+    if (res.ok) {
+      showMessage("Mesajul introdus a fost trimis cu succes.", true);
+    } else {
+      showMessage(
+        "A apărut o eroare la trimiterea mesajului. Vă rugăm să încercați din nou.",
+        false
+      );
+    }
   }
 });
 
