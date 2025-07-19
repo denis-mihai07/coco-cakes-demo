@@ -5,7 +5,11 @@ const app = express();
 const PORT = 3000;
 
 const corsOptions = {
-  origin: "https://coco-cakes.ro",
+  origin: [
+    "https://coco-cakes.ro",
+    "http://127.0.0.1:5500",
+    "http://localhost:3000",
+  ],
   optionsSuccessStatus: 200,
 };
 
@@ -25,5 +29,5 @@ app.post("/send-email", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Serverul ascultă pe http://coco-cakes.ro:${PORT}`);
+  console.log(`Serverul ascultă pe portul ${PORT}`);
 });

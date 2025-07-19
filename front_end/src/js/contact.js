@@ -1,4 +1,9 @@
 let form = document.getElementById("contact_form");
+let submitButton = document.querySelector(
+  "#contact_form button[type='submit']"
+);
+
+let loading = document.getElementById("loading");
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -16,24 +21,58 @@ form.addEventListener("submit", async (e) => {
   } else if (mes.length < 15) {
     showMessage("Mesajul introdus este prea scurt.", false);
   } else {
-    // showMessage("Mesajul introdus a fost trimis cu succes.", true);
-    const res = await fetch("https://api.coco-cakes.ro/send-email", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        senderName: first_name + " " + last_name,
-        senderEmail: email,
-        userMessage: mes,
-        phoneNumber: phone,
-      }),
-    });
-    if (res.ok) {
-      showMessage("Mesajul introdus a fost trimis cu succes.", true);
-    } else {
-      showMessage(
-        "A apărut o eroare la trimiterea mesajului. Vă rugăm să încercați din nou.",
-        false
-      );
+    if (submitButton) {
+      submitButton.disabled = true;
+      submitButton.textContent = "Se trimite...";
+    }
+    removeMessage();
+    loading.classList.add("show");
+
+    try {
+      const res = await fetch("https://api.coco-cakes.ro/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          senderName: first_name + " " + last_name,
+          senderEmail: email,
+          userMessage: mes,
+          phoneNumber: phone,
+        }),
+      });
+      if (res.ok) {
+        removeMessage();
+        loading.classList.add("show");
+        setTimeout(() => {
+          showMessage("Mesajul introdus a fost trimis cu succes.", true);
+          loading.classList.remove("show");
+
+          if (submitButton) {
+            submitButton.disabled = false;
+            submitButton.textContent = "Trimite Mesajul";
+          }
+        }, 3000);
+      } else {
+        removeMessage();
+        loading.classList.add("show");
+        setTimeout(() => {
+          showMessage("A apărut o eroare la trimiterea mesajului.", false);
+
+          loading.classList.remove("show");
+
+          if (submitButton) {
+            submitButton.disabled = false;
+            submitButton.textContent = "Trimite Mesajul";
+          }
+        }, 3000);
+      }
+    } catch (error) {
+      showMessage("A apărut o eroare la rețea. Reîncearcă.", false);
+      loading.classList.remove("show");
+    } finally {
+      if (submitButton) {
+        submitButton.disabled = false;
+        submitButton.textContent = "Trimite Mesajul";
+      }
     }
   }
 });
@@ -47,6 +86,9 @@ const message = document.getElementById("error_message");
 function showMessage(text, succes) {
   if (succes) {
     message.textContent = text;
+    message.classList.add("glow");
+    message.classList.remove("glow");
+
     message.classList.add("accepted_message");
     message.classList.remove("rejected_message");
   } else {
@@ -54,4 +96,10 @@ function showMessage(text, succes) {
     message.classList.remove("accepted_message");
     message.classList.add("rejected_message");
   }
+}
+
+function removeMessage() {
+  message.textContent = "";
+  message.classList.remove("accepted_message");
+  message.classList.remove("rejected_message");
 }

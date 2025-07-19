@@ -337,6 +337,30 @@
   align-items: center;
 }
 
+.loading_container {
+  /* border: 2px solid red; */
+  width: 3rem;
+  aspect-ratio: 1;
+  margin-left: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #f3a4a4;
+  border-radius: 50%;
+  height: 1.75rem;
+  aspect-ratio: 1;
+  animation: spin 1s linear infinite;
+}
+
+.loading_container.show {
+  opacity: 1;
+}
+
 #contact_button {
   height: 80%;
   aspect-ratio: 1 / 0.35;
@@ -381,6 +405,26 @@
   font-size: 1.1rem;
   font-weight: bold;
   font-family: Nunito;
+}
+
+#error_message.accepted_message {
+  animation: glow 1.5s linear forwards;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px -5px #aef4af;
+  }
+  50% {
+    box-shadow: 0 0 5px 5px #aef4af;
+  }
 }
 
 .accepted_message {
