@@ -40,25 +40,18 @@ form.addEventListener("submit", async (e) => {
         }),
       });
       if (res.ok) {
-        removeMessage();
-        loading.classList.add("show");
         setTimeout(() => {
           showMessage("Mesajul introdus a fost trimis cu succes.", true);
           loading.classList.remove("show");
-
           if (submitButton) {
             submitButton.disabled = false;
             submitButton.textContent = "Trimite Mesajul";
           }
         }, 3000);
       } else {
-        removeMessage();
-        loading.classList.add("show");
         setTimeout(() => {
           showMessage("A apărut o eroare la trimiterea mesajului.", false);
-
           loading.classList.remove("show");
-
           if (submitButton) {
             submitButton.disabled = false;
             submitButton.textContent = "Trimite Mesajul";
@@ -68,11 +61,6 @@ form.addEventListener("submit", async (e) => {
     } catch (error) {
       showMessage("A apărut o eroare la rețea. Reîncearcă.", false);
       loading.classList.remove("show");
-    } finally {
-      if (submitButton) {
-        submitButton.disabled = false;
-        submitButton.textContent = "Trimite Mesajul";
-      }
     }
   }
 });
